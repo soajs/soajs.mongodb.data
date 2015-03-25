@@ -7,10 +7,10 @@ for (var i = 0; i < files.length; i++) {
     load(files[i].name);
 }
 
-provDb.products.drop();
+// provDb.products.drop();
 
 var records = [];
-records.push(testProduct);
+records.push(dsbrdProduct);
 provDb.products.insert(records);
 
 

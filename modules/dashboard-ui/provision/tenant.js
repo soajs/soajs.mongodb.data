@@ -7,10 +7,10 @@ for (var i = 0; i < files.length; i++) {
     load(files[i].name);
 }
 
-provDb.tenants.drop();
+//provDb.tenants.drop();
 
 var records = [];
-records.push(test);
+records.push(DbTenant);
 
 provDb.tenants.insert(records);
 
