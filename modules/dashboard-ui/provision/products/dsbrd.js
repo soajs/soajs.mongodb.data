@@ -10,6 +10,7 @@ var dsbrdProduct = {
         {
             "code" : "DSBRD_DEFLT",
             "name" : "Main package",
+            "locked" : true,
             "description" : "this is the main dashboard product package.",
             "acl" : {
                 "urac" : {

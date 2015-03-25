@@ -1,10 +1,10 @@
 'use strict';
-//password = mathieu
-var antoine = {
-	"_id": ObjectId("22d2cb5fc04ce51e06000001"), // change
+//password = password
+var admin = {
+	"_id": ObjectId("551287c9e603d7e01ab16890"), 
 	"locked" : true,
 	"username": "admin",
-	"password": '$2a$04$EfG6mMcD/o5UCU9qnkSIAOMx20msSKgNhCWrqfAd7SHtan5ae2NWO',
+	"password": '$2a$04$GfQ/6TJX82HcCoq8z8R44uN6x38hmJVIh7sKXIxknjt9UjN/f90sy',
 	"firstName": "admin",
 	"lastName": "admin",
 	"email": "admin@domain.com",
@@ -14,15 +14,6 @@ var antoine = {
 	"groups": ["administrator"], 
 	"config": {
 		"packages": {},
-		"keys": {},
-		"dashboard": [
-			"members",
-			"environments",
-			"productization",
-			"productization_packages",
-			"multi-tenancy",
-			"multi-tenancy_applications",
-			"multi-tenancy_keys"
-		]
+		"keys": {}
 	}
 };
