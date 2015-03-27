@@ -10,7 +10,7 @@ var DbTenant = {
 			"product": "DSBRD",
 			"package": "DSBRD_DEFLT",
 			"appId": ObjectId('5512926a7a1f0e2123f638de'),
-			"description": "this is a description for app for test tenant for test product and basic package",
+			"description": "this is the main application for the dashboard tenant",
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
 			"keys": [
 				{

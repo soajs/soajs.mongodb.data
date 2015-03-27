@@ -35,6 +35,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"dashboardui":{
+								
+							},
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {

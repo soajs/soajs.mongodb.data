@@ -11,6 +11,7 @@ provDb.products.drop();
 
 var records = [];
 records.push(testProduct);
+records.push(locked);
 provDb.products.insert(records);
 
 

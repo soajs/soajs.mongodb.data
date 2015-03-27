@@ -1,4 +1,4 @@
-var ddb = db.getSiblingDB('DBTN_urac');
+var ddb = db.getSiblingDB('test_urac');
 //provDb.dropDatabase();
 
 /* users */
@@ -7,10 +7,13 @@ for(var i = 0; i < files.length; i++) {
 	load(files[i].name);
 }
 
-//ddb.users.drop();
+ddb.users.drop();
 
 var records = [];
-records.push(admin);
+records.push(user4);
+records.push(user3);
+records.push(user2);
+records.push(user1);
 ddb.users.insert(records);
 
 
@@ -27,8 +30,9 @@ for(var i = 0; i < gfiles.length; i++) {
 
 ddb.groups.drop();
 
-var records = [];
+records = [];
 records.push(administrator);
+records.push(bronze);
 ddb.groups.insert(records);
 
 /* Indexes for users */
