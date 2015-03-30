@@ -1,7 +1,6 @@
 var provDb = db.getSiblingDB('core_provision');
 //provDb.dropDatabase();
 
-/* Tenants */
 var files = listFiles('./products');
 for (var i = 0; i < files.length; i++) {
     load(files[i].name);

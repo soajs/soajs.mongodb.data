@@ -13,7 +13,5 @@ records.push(dev);
 
 provDb.environment.insert(records);
 
-
 /* Indexes for products */
 provDb.environment.ensureIndex({ code: 1 }, { unique: true });
-//provDb.products.ensureIndex({ 'packages.code': 1 }, { unique: true });

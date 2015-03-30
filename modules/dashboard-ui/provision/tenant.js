@@ -7,13 +7,12 @@ for (var i = 0; i < files.length; i++) {
     load(files[i].name);
 }
 
-//provDb.tenants.drop();
+provDb.tenants.drop();
 
 var records = [];
 records.push(DbTenant);
 
 provDb.tenants.insert(records);
-
 
 /* Indexes for tenants */
 provDb.tenants.ensureIndex({ code: 1 }, { unique: true });
