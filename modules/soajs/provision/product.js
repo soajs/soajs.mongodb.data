@@ -16,4 +16,4 @@ provDb.products.insert(records);
 
 /* Indexes for products */
 provDb.products.ensureIndex({ code: 1 }, { unique: true });
-provDb.products.ensureIndex({ 'packages.code': 1 }, { unique: true });
+provDb.products.ensureIndex({ 'packages.code': 1 });

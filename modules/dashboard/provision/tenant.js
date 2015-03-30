@@ -17,5 +17,5 @@ provDb.tenants.insert(records);
 
 /* Indexes for tenants */
 provDb.tenants.ensureIndex({ code: 1 }, { unique: true });
-provDb.tenants.ensureIndex({ 'applications.appId': 1 }, { unique: true });
-provDb.tenants.ensureIndex({ 'applications.keys.key': 1 }, { unique: true });
+provDb.tenants.ensureIndex({ 'applications.appId': 1 });
+provDb.tenants.ensureIndex({ 'applications.keys.key': 1 });
