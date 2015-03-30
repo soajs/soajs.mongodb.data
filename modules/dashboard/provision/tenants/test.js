@@ -38,13 +38,9 @@ var test = {
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
-									"type": "smtp",
+									"type": "sendmail",
 									"options": {
-										'service': 'gmail',
-										"auth": {
-											'user': 'soajsnotifier@gmail.com',
-											'pass': 'Supernova1985'
-										}
+										'path': '/usr/sbin/sendmail'
 									}
 								}
 							},
