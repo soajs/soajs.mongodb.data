@@ -10,7 +10,6 @@ for(var i = 0; i < files.length; i++) {
 ddb.users.drop();
 
 var records = [];
-records.push(antoine);
 records.push(user3);
 records.push(user2);
 records.push(user1);
@@ -38,7 +37,6 @@ var records = [];
 records.push(user1);
 records.push(user3);
 records.push(user2);
-
 ddbT.users.insert(records);
 
 
