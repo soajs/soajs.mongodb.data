@@ -36,4 +36,4 @@ records.push(bronze);
 ddb.groups.insert(records);
 
 /* Indexes for users */
-ddb.groups.ensureIndex({name: 1}, {unique: true});
+ddb.groups.ensureIndex({code: 1}, {unique: true});
