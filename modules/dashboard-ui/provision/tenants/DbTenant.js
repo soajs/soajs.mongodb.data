@@ -28,7 +28,7 @@ var DbTenant = {
 						"dev":{
 							"dashboardui":{
 								"permissions":[
-						   			"members","groups",
+						   			"members",
 									"environments",
 									"productization",
 									"productization_packages",
