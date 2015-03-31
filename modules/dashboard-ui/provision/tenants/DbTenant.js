@@ -5,6 +5,7 @@ var DbTenant = {
 	"code": "DBTN",
 	"name": "Dashboard Tenant",
 	"description": "this is the main dashboard tenant",
+	"oauth":{},
 	"applications": [
 		{
 			"product": "DSBRD",
@@ -27,7 +28,7 @@ var DbTenant = {
 						"dev":{
 							"dashboardui":{
 								"permissions":[
-						   			"members",
+						   			"members","groups",
 									"environments",
 									"productization",
 									"productization_packages",

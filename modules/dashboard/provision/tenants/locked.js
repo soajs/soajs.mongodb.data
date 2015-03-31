@@ -1,6 +1,8 @@
 'use strict';
 var locked = {
 	"_id": ObjectId("551286bce603d7e01ab1688e"), 
+	"oauth": {
+	},
 	"locked" : true, 	
 	"code": "DBTN",
 	"name": "Dashboard Tenant",

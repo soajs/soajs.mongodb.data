@@ -11,7 +11,5 @@ var user1 = {
 	"ts": new Date().getTime(),
 	"status": "active",
 	"profile": {},
-	"groups": ['gold'],
-	"config": {		
-	}
+	"groups": ['gold']
 };

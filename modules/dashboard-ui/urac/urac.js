@@ -7,7 +7,7 @@ for(var i = 0; i < files.length; i++) {
 	load(files[i].name);
 }
 
-//ddb.users.drop();
+ddb.users.drop();
 
 var records = [];
 records.push(admin);
