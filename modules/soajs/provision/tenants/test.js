@@ -38,9 +38,7 @@ var test = {
 								"from": 'me@localhost.com',
 								"transport": {
 									"type": "sendmail",
-									"options": {
-										'path': '/usr/sbin/sendmail'
-									}
+									"options": {}
 								}
 							},
 							"urac": {

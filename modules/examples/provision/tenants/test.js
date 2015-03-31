@@ -39,15 +39,9 @@ var test = {
 								"from": 'me@localhost.com',
 								"transport": {
 									"type": "sendmail",
-									"options": {
-										'path': '/usr/sbin/sendmail'
-									}
+									"options": {}
 								}
 							},
-							//"oauth": {
-							//	"hashIterations": 1024, //used by hasher
-							//	"seedLength": 32 //used by hasher
-							//},
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher

@@ -1,12 +1,11 @@
 'use strict';
 var locked = {
 	"_id": ObjectId("551286bce603d7e01ab1688e"), 
-	"oauth": {
-	},
+	"oauth": {},
 	"locked" : true, 	
 	"code": "DBTN",
 	"name": "Dashboard Tenant",
-	"description": "this is the main dashboard tenant",
+	"description": "This is the main dashboard tenant",
 	"applications": [
 		{
 			"product": "DSBRD",
@@ -38,11 +37,9 @@ var locked = {
 									"multi-tenancy_keys"
 								]
 							},
-							"mail": {},
-						
+							"mail": {},						
 							"urac": {}
-						}
-					
+						}					
 					}
 				}
 			]

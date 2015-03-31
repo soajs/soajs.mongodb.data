@@ -42,7 +42,6 @@ var DbTenant = {
 								"transport": {
 									"type": "sendmail",
 									"options": {
-										'path': '/usr/sbin/sendmail'
 									}
 								}
 							},
