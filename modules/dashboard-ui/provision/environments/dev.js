@@ -46,7 +46,7 @@ var dev = {
 			}
 		},
 		"databases": {
-			"examples": {
+			"urac": {
 				"cluster": "cluster1",
 				"tenantSpecific": true
 			}
