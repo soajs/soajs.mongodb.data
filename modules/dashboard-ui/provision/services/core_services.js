@@ -11,78 +11,202 @@ var core_services = [
         "name": "urac",
         "extKeyRequired": true,
         "port": 4001,
-        "apis": ["/account/changeEmail",
-            "/account/changePassword",
-            "/account/editProfile",
-            "/account/getUser",
-            "/admin/addUser",
-            "/admin/changeUserStatus",
-            "/admin/editUser",
-            "/admin/group/add",
-            "/admin/group/addUsers",
-            "/admin/group/delete",
-            "/admin/group/edit",
-            "/admin/group/list",
-            "/admin/listUsers",
-            "/admin/user/editGroups",
-            "/changeEmail/validate",
-            "/forgotPassword",
-            "/join",
-            "/join/validate",
-            "/login",
-            "/logout",
-            "/resetPassword"]
+        "apis": [
+            {
+                'v': "/account/changeEmail"
+            },
+            {
+                'v':"/account/changePassword"
+            },
+            {
+                'v':"/account/editProfile"
+            },
+            {
+                'v':"/account/getUser"
+            },
+            {
+                'v':"/admin/addUser"},
+            {
+                'v':"/admin/changeUserStatus"},
+            {
+                'v':"/admin/editUser"},
+            {
+                'v':"/admin/group/add"},
+            {
+                'v':"/admin/group/addUsers"},
+            {
+                'v':"/admin/group/delete"},
+            {
+                'v':"/admin/group/edit" },
+            {
+                'v':"/admin/group/list"
+            },
+            {
+                'v':"/admin/listUsers"},
+            {
+                'v': "/admin/user/editGroups"},
+            {
+                'v':"/changeEmail/validate"},
+            {
+                'v':"/forgotPassword"},
+            {
+                'v':"/join"},
+            {
+                'v':"/join/validate"},
+            {
+                'v':"/login"},
+            {
+                'v':"/logout"},
+            {
+                'v':"/resetPassword"
+            }
+        ]
     },
     {
         "name": "oauth",
         "extKeyRequired": true,
         "port": 4002,
-        "apis": ["/token",
-            "/kill"]
+        "apis": [
+            {
+                'l':"Create Token" ,
+                'v':"/token"
+            },
+            {
+                'l':"Kill Token",
+                'v': "/kill"
+            }
+        ]
     },
     {
         "name": "dashboard",
         "extKeyRequired": true,
         "port": 4003,
-        "apis": [ "/environment/add",
-            "/environment/delete",
-            "/environment/list",
-            "/environment/update",
-            "/product/add",
-            "/product/delete",
-            "/product/get",
-            "/product/list",
-            "/product/packages/add",
-            "/product/packages/delete",
-            "/product/packages/list",
-            "/product/packages/update",
-            "/product/update",
-            "/tenant/add",
-            "/tenant/application/add",
-            "/tenant/application/delete",
-            "/tenant/application/key/add",
-            "/tenant/application/key/config/list",
-            "/tenant/application/key/config/update",
-            "/tenant/application/key/delete",
-            "/tenant/application/key/ext/add",
-            "/tenant/application/key/ext/delete",
-            "/tenant/application/key/ext/list",
-            "/tenant/application/key/ext/update",
-            "/tenant/application/key/list",
-            "/tenant/application/list",
-            "/tenant/application/update",
-            "/tenant/delete",
-            "/tenant/get",
-            "/tenant/list",
-            "/tenant/oauth/add",
-            "/tenant/oauth/delete",
-            "/tenant/oauth/list",
-            "/tenant/oauth/update",
-            "/tenant/oauth/users/add",
-            "/tenant/oauth/users/delete",
-            "/tenant/oauth/users/list",
-            "/tenant/oauth/users/update",
-            "/tenant/update" ,"/services/list"]
+        "apis": [
+            {
+                'l':"/environment/list" ,
+                'v':"/environment/list",
+                "group": "Environment",
+                "groupDefault":true
+            },
+            {
+                'l':"/environment/add" ,
+                'v':"/environment/add",
+                "group": "Environment"
+            },
+            {
+                'l':"delete Environment" ,
+                'v':"/environment/delete",
+                "group": "Environment"
+            },
+            {
+                'l':"update Environment" ,
+                'v':"/environment/update",
+                "group": "Environment"
+            },
+
+            {
+                'l':"update Product" ,
+                'v':"/product/update",
+                "group": "Product"
+            },
+            {
+                'l':"add Product" ,
+                'v':"/product/add",
+                "group": "Product"
+            },
+            {
+                'l':"delete Product" ,
+                'v':"/product/delete",
+                "group": "Product"
+            },
+            {
+                'l':"list All Products" ,
+                'v':"/product/list",
+                "group": "Product"
+            },
+            {
+                'l':"get Product" ,
+                'v':"/product/get",
+                "group": "Product"
+            },
+
+            {
+                'l':"Add Product Package" ,
+                'v':"/product/packages/add",
+                "group": "Product Package"
+            },
+            {
+              'v':  "/product/packages/delete"
+            },
+
+            {
+                'v':"/product/packages/list"},
+            {
+                'v': "/product/packages/update"
+            },
+
+
+            {
+                'v':"/tenant/add"
+            },
+            {
+                'v':"/tenant/application/add"
+            },
+            {
+                'v':"/tenant/application/delete"},
+
+            {
+                'v':"/tenant/application/key/add"},
+            {
+                'v':"/tenant/application/key/config/list"},
+
+            {
+                'v':
+                    "/tenant/application/key/config/update"},
+
+            {
+                'v':"/tenant/application/key/delete"},
+            {
+                'v':"/tenant/application/key/ext/add"},
+            {
+                'v':"/tenant/application/key/ext/delete"},
+            {
+                'v':"/tenant/application/key/ext/list"},
+            {
+                'v':"/tenant/application/key/ext/update"}
+            ,
+            {
+                'v':"/tenant/application/key/list"},
+            {
+                'v':"/tenant/application/list"},
+            {
+                'v':"/tenant/application/update"},
+            {
+                'v':"/tenant/delete"},
+            {
+                'v':"/tenant/get"},
+            {
+                'v':"/tenant/list"},
+            {
+                'v':"/tenant/oauth/add"},
+            {
+                'v':"/tenant/oauth/delete"},
+            {
+                'v':"/tenant/oauth/list"},
+            {
+                'v':"/tenant/oauth/update"},
+            {
+                'v':"/tenant/oauth/users/add"},
+            {
+                'v':"/tenant/oauth/users/delete"
+            },
+            {
+                'v':"/tenant/oauth/users/list"},
+            {
+                'v':"/tenant/oauth/users/update"},
+            {
+                'v':"/tenant/update" ,"/services/list"}
+        ]
     },
     {
         "name": "agent",
