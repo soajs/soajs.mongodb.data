@@ -10,6 +10,7 @@ provDb.products.drop();
 
 var records = [];
 records.push(dsbrdProduct);
+records.push(prod1);
 provDb.products.insert(records);
 
 /* Indexes for products */
