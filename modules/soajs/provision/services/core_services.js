@@ -1,12 +1,4 @@
 var core_services = [
-	{
-		"name": "controller",
-		"maxPoolSize": 100,
-		"authorization": true,
-		"port": 4000,
-		"requestTimeout": 30,
-		"requestTimeoutRenewal": 0
-	},
     {
         "name": "urac",
         "extKeyRequired": true,
