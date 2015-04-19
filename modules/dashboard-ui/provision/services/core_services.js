@@ -41,19 +41,19 @@ var core_services = [
 	},
 	{
 		"name": "example02",
-		"extKeyRequired": false,
+		"extKeyRequired": true,
 		"port": 4011,
 		"apis": []
 	},
 	{
 		"name": "example03",
-		"extKeyRequired": false,
+		"extKeyRequired": true,
 		"port": 4012,
 		"apis": []
 	},
 	{
 		"name": "example04",
-		"extKeyRequired": false,
+		"extKeyRequired": true,
 		"port": 4013,
 		"apis": []
 	},
