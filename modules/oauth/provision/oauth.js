@@ -11,7 +11,3 @@ provDb.oauth_urac.drop();
 var records = [];
 records.push(oauthuser);
 provDb.oauth_urac.insert(records);
-
-
-/* Indexes for oAuth URAC */
-provDb.oauth_urac.ensureIndex({ userId: 1 }, { unique: true });
