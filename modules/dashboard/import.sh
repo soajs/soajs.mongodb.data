@@ -1,7 +1,8 @@
 #!/bin/bash
 
 pushd ./provision
+mongo ./environment.js
 mongo ./tenant.js
 mongo ./product.js
-mongo ./environment.js
+mongo ./services.js
 popd
