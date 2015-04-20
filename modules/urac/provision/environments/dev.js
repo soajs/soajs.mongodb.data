@@ -2,8 +2,11 @@
 var dev = {
 	"_id": ObjectId('55128442e603d7e01ab1688c'),
 	"code": "DEV",
-	"locked" : true,
+	"locked": true,
 	"description": "this is the DEV environment",
+	"ips": [
+		"127.0.0.1"
+	],
 	"dbs": {
 		"clusters": {
 			"cluster1": {
@@ -58,7 +61,7 @@ var dev = {
 		},
 		"config": {
 			"awareness": {
-				"healthCheckInterval": 1000 * 5, // 5 seconds
+				"healthCheckInterval": 1000 * 0.5, // 5 seconds
 				"autoRelaodRegistry": 1000 * 60 * 5 // 5 minutes
 			},
 			"agent": {
@@ -95,4 +98,4 @@ var dev = {
 			}
 		}
 	}
-}
+};
