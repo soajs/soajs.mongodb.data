@@ -22,7 +22,7 @@ var core_services = [
 			{
 				"l": "Get User Info",
 				"group": "My Account",
-				"groupDefault": true,
+				"groupMain": true,
 				'v': "/account/getUser"
 			},
 			{
@@ -68,7 +68,7 @@ var core_services = [
 			{
 				"l": "List Users",
 				"group": "Administration",
-				"groupDefault": true,
+				"groupMain": true,
 				'v': "/admin/listUsers"
 			},
 			{
@@ -99,7 +99,7 @@ var core_services = [
 			{
 				"l": "Login",
 				"group": "Guest",
-				"groupDefault": true,
+				"groupMain": true,
 				'v': "/login"
 			},
 			{
