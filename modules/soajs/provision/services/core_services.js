@@ -32,11 +32,6 @@ var core_services = [
 ];
 
 var core_hosts = [
-	{
-		"env": "dev",
-		"name": "controller",
-		"ip": "127.0.0.1"
-	},
     {
         "env": "dev",
         "name": "oauth",
