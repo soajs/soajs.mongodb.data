@@ -31,7 +31,7 @@ var DbTenant = {
 						   			"members",
 									"environments",
 									"productization",
-									"productization_packages",
+									"productization_packages", "product-acl",
 									"multi-tenancy",
 									"multi-tenancy_applications",
 									"multi-tenancy_keys"
@@ -59,21 +59,25 @@ var DbTenant = {
 								"validateJoin": true, //true if registration needs validation
 								"mail": { //urac mail options
 									"join": {
-										"subject": 'Welcome to SOAJS'
+										"subject": 'Welcome to SOAJS',
+										"path": "./mail/urac/join.tmpl"
 									},
 									"forgotPassword": {
-										"subject": 'Reset Your Password at SOAJS'
+										"subject": 'Reset Your Password at SOAJS',
+										"path": "./mail/urac/forgotPassword.tmpl"
 									},
 									"addUser": {
-										"subject": 'Account Created at SOAJS'
+										"subject": 'Account Created at SOAJS',
+										"path": "./mail/urac/addUser.tmpl"
 									},
 									"changeUserStatus": {
 										"subject": "Account Status changed at SOAJS",
 										//use custom HTML
-										"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ ts|date('F jS, Y') }}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+										"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ ts|date('F jS, Y') }}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
 									},
 									"changeEmail": {
-										"subject": "Change Account Email at SOAJS"
+										"subject": "Change Account Email at SOAJS",
+										"path": "./mail/urac/changeEmail.tmpl"
 									}
 								}
 							}
