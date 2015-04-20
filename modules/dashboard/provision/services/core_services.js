@@ -210,6 +210,11 @@ var core_services = [
 				"l": "Update Tenant",
 				"group": "Tenant",
 				'v': "/tenant/update"
+			},
+			{
+				"l": "List Services",
+				"group": "Services",
+				'v': "/services/list"
 			}
 		]
 	}
