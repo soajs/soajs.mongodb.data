@@ -28,17 +28,13 @@ var DbTenant = {
 						"dev":{
 							"dashboardui":{
 								"permissions":[
-						   			"members", "services",
-					        "members",
+						   			"members",
 									"environments",
-									"productization","product-acl",
-									"multi-tenancy", "tenant-app-acl"
-									"services",
 									"productization",
-									"productization_packages", "product-acl",
-									"multi-tenancy", "tenant-app-acl",
-									"multi-tenancy_applications",
-									"multi-tenancy_keys"
+									"product-acl",
+									"multi-tenancy",
+									"tenant-app-acl"
+									"services"
 								]
 							},
 							"mail": {
