@@ -115,24 +115,6 @@ var core_services = [
         ]
 	},
 	{
-		"name": "oauth",
-		"extKeyRequired": true,
-		"port": 4002,
-        "apis": [
-            {
-                'l':"Create Token" ,
-                'v':"/token",
-                "group": "Token",
-                "groupMain": true
-            },
-            {
-                'l':"Kill Token",
-                "group": "Token",
-                'v': "/kill"
-            }
-        ]
-	},
-	{
 		"name": "dashboard",
 		"extKeyRequired": true,
 		"port": 4003,
@@ -159,12 +141,6 @@ var core_services = [
                 "group": "Environment"
             },
             {
-                'l': "List Products",
-                'v': "/product/list",
-                "group": "Product",
-                "groupMain": true
-            },
-            {
                 'l': "Update Product",
                 'v': "/product/update",
                 "group": "Product"
@@ -179,7 +155,12 @@ var core_services = [
                 'v': "/product/delete",
                 "group": "Product"
             },
-
+            {
+                'l': "List Products",
+                'v': "/product/list",
+                "group": "Product",
+                "groupMain": true
+            },
             {
                 'l': "Get Product",
                 'v': "/product/get",
@@ -340,7 +321,6 @@ var core_services = [
                 "group": "Tenant oAuth",
                 'v': "/tenant/oauth/users/delete"
             },
-
             {
                 "l": "Update Tenant oAuth User",
                 "group": "Tenant oAuth",
