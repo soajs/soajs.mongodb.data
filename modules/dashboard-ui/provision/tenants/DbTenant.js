@@ -33,7 +33,7 @@ var DbTenant = {
 									"productization",
 									"product-acl",
 									"multi-tenancy",
-									"tenant-app-acl"
+									"tenant-app-acl",
 									"services"
 								]
 							},
