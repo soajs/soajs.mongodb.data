@@ -28,8 +28,9 @@ var DbTenant = {
 						"dev":{
 							"dashboardui":{
 								"permissions":[
-						   			"members",
+					        "members",
 									"environments",
+									"services",
 									"productization",
 									"productization_packages", "product-acl",
 									"multi-tenancy", "tenant-app-acl",
