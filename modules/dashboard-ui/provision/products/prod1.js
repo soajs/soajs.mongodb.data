@@ -1,5 +1,6 @@
 'use strict';
 var prod1 = {
+    "_id": ObjectId('5535121b58515bf9c2942680'),
     "code" : "PROD1",
     "name" : "Test Product",
     "description" : "this is a test product.",
@@ -10,12 +11,6 @@ var prod1 = {
             "description": "package 1",
             "acl": {
                 "urac": {
-                    "access": false,
-                    "apis": {
-                        "/account/changeEmail": {
-                            "access": true
-                        }
-                    }
                 }
             },
             "_TTL": 21600000

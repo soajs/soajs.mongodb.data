@@ -32,7 +32,7 @@ var DbTenant = {
 									"environments",
 									"productization",
 									"productization_packages", "product-acl",
-									"multi-tenancy",
+									"multi-tenancy", "tenant-app-acl",
 									"multi-tenancy_applications",
 									"multi-tenancy_keys"
 								]

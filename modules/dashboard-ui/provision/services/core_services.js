@@ -1,13 +1,5 @@
 var core_services = [
 	{
-		"name": "controller",
-		"maxPoolSize": 100,
-		"authorization": true,
-		"port": 4000,
-		"requestTimeout": 30,
-		"requestTimeoutRenewal": 0
-	},
-	{
 		"name": "urac",
 		"extKeyRequired": true,
 		"port": 4001,
@@ -129,10 +121,13 @@ var core_services = [
         "apis": [
             {
                 'l':"Create Token" ,
-                'v':"/token"
+                'v':"/token",
+                "group": "Token",
+                "groupMain": true
             },
             {
                 'l':"Kill Token",
+                "group": "Token",
                 'v': "/kill"
             }
         ]
@@ -163,7 +158,12 @@ var core_services = [
                 'v': "/environment/update",
                 "group": "Environment"
             },
-
+            {
+                'l': "List Products",
+                'v': "/product/list",
+                "group": "Product",
+                "groupMain": true
+            },
             {
                 'l': "Update Product",
                 'v': "/product/update",
@@ -179,12 +179,7 @@ var core_services = [
                 'v': "/product/delete",
                 "group": "Product"
             },
-            {
-                'l': "List Products",
-                'v': "/product/list",
-                "group": "Product",
-                "groupMain": true
-            },
+
             {
                 'l': "Get Product",
                 'v': "/product/get",
@@ -212,18 +207,18 @@ var core_services = [
                 "group": "Product",
                 'v': "/product/packages/update"
             },
-
-            {
-                "l": "Get Tenant Info",
-                "group": "Tenant",
-                'v': "/tenant/get"
-            },
             {
                 "l": "List Tenants",
                 "group": "Tenant",
                 "groupMain": true,
                 'v': "/tenant/list"
             },
+            {
+                "l": "Get Tenant Info",
+                "group": "Tenant",
+                'v': "/tenant/get"
+            },
+
             {
                 "l": "Add Tenant",
                 "group": "Tenant",
@@ -234,25 +229,26 @@ var core_services = [
                 "group": "Tenant",
                 'v': "/tenant/update"
             },
-
+            {
+                "l": "List Tenant Applications",
+                "group": "Tenant Application",
+                'v': "/tenant/application/list",
+                "groupMain": true
+            },
             {
                 "l": "Add Tenant Application",
                 "group": "Tenant Application",
                 'v': "/tenant/application/add"
             },
-            {
-                "l": "List Tenant Applications",
-                "group": "Tenant Application",
-                'v': "/tenant/application/list"
-            },
+
             {
                 "l": "Update Tenant Application",
                 "group": "Tenant Application",
                 'v': "/tenant/application/update"
             },
             {
-                "l": "Delete Tenant Application",
-                "group": "Tenant Application",
+                "l": "Delete Tenant",
+                "group": "Tenant",
                 'v': "/tenant/delete"
             },
             {
@@ -267,50 +263,53 @@ var core_services = [
                 'v': "/tenant/application/key/add"
             },
             {
-                "l": "List Tenant Application Key Configuration",
+                "l": "List Application Key Configuration",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/config/list"
             },
 
             {
-                "l": "Update Tenant Application Key Configuration",
+                "l": "Update Application Key Configuration",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/config/update"
             },
 
             {
-                "l": "Delete Tenant Application Key",
+                "l": "Delete Application Key",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/delete"
             },
             {
-                "l": "Add Tenant Application External Key",
+                "l": "Add Application External Key",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/ext/add"
             },
             {
-                "l": "Delete Tenant Application External Key",
+                "l": "Delete Application External Key",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/ext/delete"
             },
             {
-                "l": "List Tenant Application External Keys",
+                "l": "List Application External Keys",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/ext/list"
             },
             {
-                "l": "Update Tenant Application External Key",
+                "l": "Update Application External Key",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/ext/update"
-            }
-            ,
+            },
             {
-                "l": "List Tenant Application Keys",
+                "l": "List Application Keys",
                 "group": "Tenant Application",
                 'v': "/tenant/application/key/list"
             },
-
-
+            {
+                "l": "List Tenant oAuth Users",
+                "group": "Tenant oAuth",
+                "groupMain": true,
+                'v': "/tenant/oauth/users/list"
+            },
             {
                 "l": "Add Tenant oAuth Configuration",
                 "group": "Tenant oAuth",
@@ -341,11 +340,7 @@ var core_services = [
                 "group": "Tenant oAuth",
                 'v': "/tenant/oauth/users/delete"
             },
-            {
-                "l": "List Tenant oAuth Users",
-                "group": "Tenant oAuth",
-                'v': "/tenant/oauth/users/list"
-            },
+
             {
                 "l": "Update Tenant oAuth User",
                 "group": "Tenant oAuth",
@@ -355,7 +350,8 @@ var core_services = [
             {
                 "l": "List Services",
                 "group": "Services",
-                'v': "/services/list"
+                'v': "/services/list",
+                "groupMain": true
             }
         ]
 	},
