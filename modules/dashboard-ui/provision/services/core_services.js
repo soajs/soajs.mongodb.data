@@ -5,6 +5,12 @@ var core_services = [
 		"port": 4001,
         "apis": [
             {
+                "l": "Get User Info",
+                "group": "My Account",
+                "groupMain": true,
+                'v': "/account/getUser"
+            },
+            {
                 "l": "Change Email",
                 "group": "My Account",
                 'v': "/account/changeEmail"
@@ -20,10 +26,10 @@ var core_services = [
                 'v': "/account/editProfile"
             },
             {
-                "l": "Get User Info",
-                "group": "My Account",
+                "l": "List Users",
+                "group": "Administration",
                 "groupMain": true,
-                'v': "/account/getUser"
+                'v': "/admin/listUsers"
             },
             {
                 "l": "Add new User",
@@ -66,15 +72,15 @@ var core_services = [
                 'v': "/admin/group/list"
             },
             {
-                "l": "List Users",
-                "group": "Administration",
-                "groupMain": true,
-                'v': "/admin/listUsers"
-            },
-            {
                 "l": "Edit Multiple Groups",
                 "group": "Administration",
                 'v': "/admin/user/editGroups"
+            },
+            {
+                "l": "Login",
+                "group": "Guest",
+                "groupMain": true,
+                'v': "/login"
             },
             {
                 "l": "Validate Change Email",
@@ -95,12 +101,6 @@ var core_services = [
                 "l": "Validate Register",
                 "group": "Guest",
                 'v': "/join/validate"
-            },
-            {
-                "l": "Login",
-                "group": "Guest",
-                "groupMain": true,
-                'v': "/login"
             },
             {
                 "l": "Logout",
@@ -141,6 +141,12 @@ var core_services = [
                 "group": "Environment"
             },
             {
+                'l': "List Products",
+                'v': "/product/list",
+                "group": "Product",
+                "groupMain": true
+            },
+            {
                 'l': "Update Product",
                 'v': "/product/update",
                 "group": "Product"
@@ -154,12 +160,6 @@ var core_services = [
                 'l': "Delete Product",
                 'v': "/product/delete",
                 "group": "Product"
-            },
-            {
-                'l': "List Products",
-                'v': "/product/list",
-                "group": "Product",
-                "groupMain": true
             },
             {
                 'l': "Get Product",
@@ -334,44 +334,6 @@ var core_services = [
                 "groupMain": true
             }
         ]
-	},
-	{
-		"name": "agent",
-		"extKeyRequired": false,
-		"port": 4004,
-		"requestTimeoutRenewal": 10,
-		"requestTimeout": 30,
-		"apis": []
-	},
-	{
-		"name": "example01",
-		"extKeyRequired": false,
-		"port": 4010,
-		"apis": []
-	},
-	{
-		"name": "example02",
-		"extKeyRequired": true,
-		"port": 4011,
-		"apis": []
-	},
-	{
-		"name": "example03",
-		"extKeyRequired": true,
-		"port": 4012,
-		"apis": []
-	},
-	{
-		"name": "example04",
-		"extKeyRequired": true,
-		"port": 4013,
-		"apis": []
-	},
-	{
-		"name": "contactUs",
-		"extKeyRequired": false,
-		"port": 4015,
-		"apis": []
 	}
 ];
 
@@ -386,44 +348,10 @@ var core_hosts = [
 		"name": "urac",
 		"ip": "127.0.0.1"
 	},
-	{
-		"env": "dev",
-		"name": "oauth",
-		"ip": "127.0.0.1"
-	},
+
 	{
 		"env": "dev",
 		"name": "dashboard",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "agent",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "example01",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "example02",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "example03",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "example04",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "contactUs",
 		"ip": "127.0.0.1"
 	}
 ];
