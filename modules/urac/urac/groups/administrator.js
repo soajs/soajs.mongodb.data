@@ -5,12 +5,5 @@ var administrator = {
 	"locked" : true,
 	"code": "administrator",
 	"name": "administrator",	 
-	"description": "this is the administrator group",
-	"permissions":["members",
-					"environments",
-					"productization",
-					"productization_packages",
-					"multi-tenancy",
-					"multi-tenancy_applications",
-					"multi-tenancy_keys" ] 
+	"description": "this is the administrator group"
 };

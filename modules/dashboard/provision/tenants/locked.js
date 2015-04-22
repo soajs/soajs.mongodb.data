@@ -26,18 +26,7 @@ var locked = {
 					],
 					"config": {
 						"dev":{
-							"dashboardui":{
-								"permissions":[
-						   			"members",
-									"environments",
-									"productization",
-									"productization_packages",
-									"multi-tenancy",
-									"multi-tenancy_applications",
-									"multi-tenancy_keys"
-								]
-							},
-							"mail": {},						
+							"mail": {},
 							"urac": {}
 						}					
 					}
