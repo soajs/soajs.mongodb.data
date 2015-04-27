@@ -268,11 +268,15 @@ var core_services = [
 				"group": "Services",
 				'v': "/services/list"
 			},
-
 			{
 				"l": "List Hosts",
 				"group": "Hosts",
 				'v': "/hosts/list"
+			},
+			{
+				"l": "Get Tenant Security Permissions",
+				"group": "Tenant",
+				'v': "/tenant/permissions/get"
 			}
 		]
 	}
