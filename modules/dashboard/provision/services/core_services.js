@@ -111,6 +111,11 @@ var core_services = [
 				"group": "Product"
 			},
 			{
+				'l': "Get Product Package",
+				'v': "/product/packages/get",
+				"group": "Product"
+			},
+			{
 				"l": "Delete Product Package",
 				"group": "Product",
 				'v': "/product/packages/delete"
@@ -126,92 +131,6 @@ var core_services = [
 				"group": "Product",
 				'v': "/product/packages/update"
 			},
-
-
-			{
-				"l": "Add Tenant",
-				"group": "Tenant",
-				'v': "/tenant/add"
-			},
-			{
-				"l": "Add Tenant Application",
-				"group": "Tenant",
-				'v': "/tenant/application/add"
-			},
-			{
-				"l": "Delete Tenant Application",
-				"group": "Tenant",
-				'v': "/tenant/application/delete"
-			},
-
-			{
-				"l": "Add Tenant Application Key",
-				"group": "Tenant",
-				'v': "/tenant/application/key/add"
-			},
-			{
-				"l": "List Tenant Application Key Configuration",
-				"group": "Tenant",
-				'v': "/tenant/application/key/config/list"
-			},
-
-			{
-				"l": "Update Tenant Application Key Configuration",
-				"group": "Tenant",
-				'v': "/tenant/application/key/config/update"
-			},
-
-			{
-				"l": "Delete Tenant Application Key",
-				"group": "Tenant",
-				'v': "/tenant/application/key/delete"
-			},
-			{
-				"l": "Add Tenant Application External Key",
-				"group": "Tenant",
-				'v': "/tenant/application/key/ext/add"
-			},
-			{
-				"l": "Delete Tenant Application External Key",
-				"group": "Tenant",
-				'v': "/tenant/application/key/ext/delete"
-			},
-			{
-				"l": "List Tenant Application External Keys",
-				"group": "Tenant",
-				'v': "/tenant/application/key/ext/list"
-			},
-			{
-				"l": "Update Tenant Application External Key",
-				"group": "Tenant",
-				'v': "/tenant/application/key/ext/update"
-			}
-			,
-			{
-				"l": "List Tenant Application Keys",
-				"group": "Tenant",
-				'v': "/tenant/application/key/list"
-			},
-			{
-				"l": "List Tenant Applications",
-				"group": "Tenant",
-				'v': "/tenant/application/list"
-			},
-			{
-				"l": "Update Tenant Application",
-				"group": "Tenant",
-				'v': "/tenant/application/update"
-			},
-			{
-				"l": "Delete Tenant Application",
-				"group": "Tenant",
-				'v': "/tenant/delete"
-			},
-			{
-				"l": "Get Tenant Info",
-				"group": "Tenant",
-				'v': "/tenant/get"
-			},
 			{
 				"l": "List Tenants",
 				"group": "Tenant",
@@ -219,44 +138,14 @@ var core_services = [
 				'v': "/tenant/list"
 			},
 			{
-				"l": "Add Tenant oAuth Configuration",
+				"l": "Get Tenant Info",
 				"group": "Tenant",
-				'v': "/tenant/oauth/add"
+				'v': "/tenant/get"
 			},
 			{
-				"l": "Delete Tenant oAuth Configuration",
+				"l": "Add Tenant",
 				"group": "Tenant",
-				'v': "/tenant/oauth/delete"
-			},
-			{
-				"l": "Get Tenant oAuth Configuration",
-				"group": "Tenant",
-				'v': "/tenant/oauth/list"
-			},
-			{
-				"l": "Update Tenant oAuth Configuration",
-				"group": "Tenant",
-				'v': "/tenant/oauth/update"
-			},
-			{
-				"l": "Add Tenant oAuth User",
-				"group": "Tenant",
-				'v': "/tenant/oauth/users/add"
-			},
-			{
-				"l": "Delete Tenant oAuth User",
-				"group": "Tenant",
-				'v': "/tenant/oauth/users/delete"
-			},
-			{
-				"l": "List Tenant oAuth Users",
-				"group": "Tenant",
-				'v': "/tenant/oauth/users/list"
-			},
-			{
-				"l": "Update Tenant oAuth User",
-				"group": "Tenant",
-				'v': "/tenant/oauth/users/update"
+				'v': "/tenant/add"
 			},
 			{
 				"l": "Update Tenant",
@@ -264,14 +153,140 @@ var core_services = [
 				'v': "/tenant/update"
 			},
 			{
-				"l": "List Services",
-				"group": "Services",
-				'v': "/services/list"
+				"l": "List Tenant Applications",
+				"group": "Tenant Application",
+				'v': "/tenant/application/list",
+				"groupMain": true
+			},
+			{
+				"l": "Add Tenant Application",
+				"group": "Tenant Application",
+				'v': "/tenant/application/add"
+			},
+			{
+				"l": "Update Tenant Application",
+				"group": "Tenant Application",
+				'v': "/tenant/application/update"
+			},
+			{
+				"l": "Delete Tenant",
+				"group": "Tenant",
+				'v': "/tenant/delete"
+			},
+			{
+				"l": "Delete Tenant Application",
+				"group": "Tenant Application",
+				'v': "/tenant/application/delete"
+			},
+			{
+				"v": "/tenant/application/acl/get",
+				"l": "Get Tenant Application By External Key",
+				"group": "Tenant Application"
+			},
+			{
+				"l": "Add Tenant Application Key",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/add"
+			},
+			{
+				"l": "List Application Key Configuration",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/config/list"
+			},
+
+			{
+				"l": "Update Application Key Configuration",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/config/update"
+			},
+
+			{
+				"l": "Delete Application Key",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/delete"
+			},
+			{
+				"l": "Add Application External Key",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/ext/add"
+			},
+			{
+				"l": "Delete Application External Key",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/ext/delete"
+			},
+			{
+				"l": "List Application External Keys",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/ext/list"
+			},
+			{
+				"l": "Update Application External Key",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/ext/update"
+			},
+			{
+				"l": "List Application Keys",
+				"group": "Tenant Application",
+				'v': "/tenant/application/key/list"
+			},
+			{
+				"l": "List Tenant oAuth Users",
+				"group": "Tenant oAuth",
+				"groupMain": true,
+				'v': "/tenant/oauth/users/list"
+			},
+			{
+				"l": "Add Tenant oAuth Configuration",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/add"
+			},
+			{
+				"l": "Delete Tenant oAuth Configuration",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/delete"
+			},
+			{
+				"l": "Get Tenant oAuth Configuration",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/list"
+			},
+			{
+				"l": "Update Tenant oAuth Configuration",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/update"
+			},
+			{
+				"l": "Add Tenant oAuth User",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/users/add"
+			},
+			{
+				"l": "Delete Tenant oAuth User",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/users/delete"
+			},
+			{
+				"l": "Update Tenant oAuth User",
+				"group": "Tenant oAuth",
+				'v': "/tenant/oauth/users/update"
 			},
 			{
 				"l": "List Hosts",
 				"group": "Hosts",
-				'v': "/hosts/list"
+				'v': "/hosts/list",
+				"groupMain": true
+			},
+			{
+				"v":"/hosts/delete",
+				"l": "Delete Hosts",
+				"group": "Hosts"
+			},
+			{
+				"l": "List Services",
+				"group": "Services",
+				'v': "/services/list",
+				"groupMain": true
 			},
 			{
 				"l": "Get Tenant Security Permissions",
