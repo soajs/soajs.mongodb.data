@@ -3,7 +3,16 @@ var core_services = [
         "name": "oauth",
         "extKeyRequired": true,
         "port": 4002,
-        "apis": []
+        "apis": [
+            {
+                "l": "Create Token",
+                'v': "/token"
+            },
+            {
+                "l": "Kill Token",
+                'v': "/kill"
+            }
+        ]
     }
 ];
 

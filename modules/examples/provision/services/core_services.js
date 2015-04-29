@@ -1,73 +1,99 @@
 var core_services = [
     {
-        "name": "urac",
-        "extKeyRequired": true,
-        "port": 4001,
-        "apis": []
+        "name": "example01",
+        "extKeyRequired": false,
+        "port": 4010,
+        "apis": [
+            {
+                "l": "Test Get",
+                'v': "/testGet"
+            },
+            {
+                "l": "Test Delete",
+                'v': "/testDel"
+            },
+            {
+                'l': 'Build Name',
+                'v': '/buildName'
+            },
+            {
+                'l': 'Test Post',
+                'v': '/testPost'
+            },
+            {
+                'l': 'Test Put',
+                'v': '/testPut'
+            }
+        ]
     },
-    {
-        "name": "oauth",
-        "extKeyRequired": true,
-        "port": 4002,
-        "apis": []
-    },
-	{
-		"name": "example01",
-		"extKeyRequired": false,
-		"port": 4010,
-		"apis": []
-	},
     {
         "name": "example02",
         "extKeyRequired": true,
         "port": 4011,
-        "apis": []
+        "apis": [
+            {
+                'l': 'Build Name',
+                'v': '/buildName'
+            }
+        ]
     },
-	{
-		"name": "example03",
-		"extKeyRequired": true,
-		"port": 4012,
-		"apis": []
-	},
+    {
+        "name": "example03",
+        "extKeyRequired": true,
+        "port": 4012,
+        "apis": [
+            {
+                "l": "Test Get Api",
+                'v': "/testGet"
+            },
+            {
+                'l': 'Build Name Api',
+                'v': '/buildName'
+            }
+        ]
+    },
     {
         "name": "example04",
         "extKeyRequired": true,
         "port": 4013,
-        "apis": []
+        "apis": [
+            {
+                'l': 'Build Name',
+                'v': '/buildName'
+            },
+            {
+                "l": "Build Name Gold",
+                'v': "/buildNameGold"
+            },
+            {
+                "l": "Test Get",
+                'v': "/testGet"
+            }
+        ]
     }
 ];
 
 var core_hosts = [
-	{
-		"env": "dev",
-		"name": "controller",
-		"ip": "127.0.0.1"
-	},
     {
         "env": "dev",
-        "name": "oauth",
+        "name": "controller",
         "ip": "127.0.0.1"
     },
     {
         "env": "dev",
-        "name": "urac",
+        "name": "example01",
         "ip": "127.0.0.1"
     },
-	{
-		"env": "dev",
-		"name": "example01",
-		"ip": "127.0.0.1"
-	},
     {
         "env": "dev",
         "name": "example02",
         "ip": "127.0.0.1"
     },
-	{
-		"env": "dev",
-		"name": "example03",
-		"ip": "127.0.0.1"
-	},
+    {
+        "env": "dev",
+        "name": "example03",
+        "ip": "127.0.0.1"
+    },
     {
         "env": "dev",
         "name": "example04",

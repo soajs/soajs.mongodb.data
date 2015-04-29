@@ -1,11 +1,5 @@
 var core_services = [
 	{
-		"name": "urac",
-		"extKeyRequired": true,
-		"port": 4001,
-		"apis": []
-	},
-	{
 		"name": "dashboard",
 		"extKeyRequired": true,
 		"port": 4003,
@@ -31,7 +25,6 @@ var core_services = [
 				'v': "/environment/update",
 				"group": "Environment"
 			},
-
 			{
 				'l': 'List Environment Databases',
 				'v': '/environment/dbs/list',
@@ -77,7 +70,6 @@ var core_services = [
 				'v': '/environment/clusters/delete',
 				'group': 'Environment'
 			},
-
 			{
 				'l': "Update Product",
 				'v': "/product/update",
@@ -104,7 +96,6 @@ var core_services = [
 				'v': "/product/get",
 				"group": "Product"
 			},
-
 			{
 				'l': "Add Product Package",
 				'v': "/product/packages/add",
@@ -120,7 +111,6 @@ var core_services = [
 				"group": "Product",
 				'v': "/product/packages/delete"
 			},
-
 			{
 				"l": "List Product Packages",
 				"group": "Product",
@@ -193,13 +183,11 @@ var core_services = [
 				"group": "Tenant Application",
 				'v': "/tenant/application/key/config/list"
 			},
-
 			{
 				"l": "Update Application Key Configuration",
 				"group": "Tenant Application",
 				'v': "/tenant/application/key/config/update"
 			},
-
 			{
 				"l": "Delete Application Key",
 				"group": "Tenant Application",
@@ -306,11 +294,6 @@ var core_hosts = [
 	{
 		"env": "dev",
 		"name": "dashboard",
-		"ip": "127.0.0.1"
-	},
-	{
-		"env": "dev",
-		"name": "urac",
 		"ip": "127.0.0.1"
 	}
 ];
