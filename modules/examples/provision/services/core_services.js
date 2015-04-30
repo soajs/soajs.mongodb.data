@@ -70,6 +70,17 @@ var core_services = [
                 'v': "/testGet"
             }
         ]
+    },
+    {
+        "name": "helloworld",
+        "extKeyRequired": true,
+        "port": 4020,
+        "apis": [
+            {
+                'l': 'hello world',
+                'v': '/hello'
+            }
+        ]
     }
 ];
 
@@ -97,6 +108,11 @@ var core_hosts = [
     {
         "env": "dev",
         "name": "example04",
+        "ip": "127.0.0.1"
+    },
+    {
+        "env": "dev",
+        "name": "helloworld",
         "ip": "127.0.0.1"
     }
 ];
