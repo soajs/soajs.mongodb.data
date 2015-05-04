@@ -271,6 +271,11 @@ var core_services = [
 				"group": "Hosts"
 			},
 			{
+				"v":"/hosts/maintenanceOperation",
+				"l": "Perform Maintenance Operation",
+				"group": "Hosts"
+			},
+			{
 				"l": "List Services",
 				"group": "Services",
 				'v': "/services/list",
