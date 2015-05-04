@@ -63,7 +63,7 @@ var dev = {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
 				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
-				"maxLogcount":5,
+				"maxLogCount":5,
 				"autoRegisterService": true
 			},
 			"agent": {
