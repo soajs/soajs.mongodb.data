@@ -3,6 +3,8 @@ var core_services = [
         "name": "oauth",
         "extKeyRequired": true,
         "port": 4002,
+        "requestTimeout": 30,
+        "requestTimeoutRenewal": 5,
         "apis": [
             {
                 "l": "Create Token",

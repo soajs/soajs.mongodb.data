@@ -3,6 +3,8 @@ var core_services = [
 		"name": "dashboard",
 		"extKeyRequired": true,
 		"port": 4003,
+		"requestTimeout": 30,
+		"requestTimeoutRenewal": 5,
 		"apis": [
 			{
 				'l': "List Environments",
