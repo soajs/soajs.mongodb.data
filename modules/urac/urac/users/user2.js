@@ -13,6 +13,10 @@ var user2 = {
 	"config": {
 		"packages": {},
 		"keys": {}
+	},
+	"tenant":{
+		"id": '10d2cb5fc04ce51e06000001',
+		"code": 'test'
 	}
 };
 

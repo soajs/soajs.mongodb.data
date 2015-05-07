@@ -11,5 +11,9 @@ var user3 = {
 	"ts": new Date().getTime(),
 	"status": "active",
 	"profile": {},
-	"config": {}
+	"config": {},
+	"tenant":{
+		"id": '10d2cb5fc04ce51e06000001',
+		"code": 'test'
+	}
 };
