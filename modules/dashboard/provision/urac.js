@@ -27,3 +27,17 @@ ddb.groups.insert(records);
 
 /* Indexes for users */
 ddb.groups.ensureIndex({code: 1}, {unique: true});
+
+ddb = db.getSiblingDB('test_urac');
+///* users */
+ddb.users.drop();
+ddb.groups.drop();
+
+var records = [];
+records.push(admin);
+ddb.users.insert(records);
+
+
+/* Indexes for users */
+ddb.users.ensureIndex({username: 1}, {unique: true});
+ddb.users.ensureIndex({email: 1}, {unique: true});

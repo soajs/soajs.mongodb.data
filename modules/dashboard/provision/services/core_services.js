@@ -294,6 +294,8 @@ var core_services = [
 		"name": "urac",
 		"extKeyRequired": true,
 		"port": 4001,
+		"requestTimeout": 30,
+		"requestTimeoutRenewal": 5,
 		"apis": []
 	}
 ];
