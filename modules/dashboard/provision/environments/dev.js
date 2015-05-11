@@ -91,10 +91,12 @@ var dev = {
 			"session": {
 				"name": "soajsID",
 				"secret": "this is antoine hage app server",
+				"rolling": false,
+				"unset": 'keep',
 				"cookie": {"path": '/', "httpOnly": true, "secure": false, "domain": "soajs.com", "maxAge": null},
 				"resave": false,
 				"saveUninitialized": false
 			}
 		}
 	}
-}
+};
