@@ -27,7 +27,23 @@ var locked = {
 					"config": {
 						"dev":{
 							"mail": {},
-							"urac": {}
+							"urac": {},
+							"dashboard": {
+								"package": {
+									"owner": {
+										"acl": {
+											"urac": {},
+											"dashboard": {}
+										}
+									},
+									"consumer": {
+										"acl": {
+											"urac": {},
+											"dashboard": {}
+										}
+									}
+								}
+							}
 						}					
 					}
 				}

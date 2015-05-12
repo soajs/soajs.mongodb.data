@@ -1,9 +1,9 @@
 'use strict';
 
 //password = 123456
-var admin = {
-	"_id": ObjectId("5551f9abe179c39b760f7a1c"),
-	"username": "user1",
+var owner = {
+	"_id": ObjectId("54ee1a511856706c23639308"),
+	"username": "owner",
 	"password": '$2a$04$yn9yaxQysIeH2VCixdovJ.TLuOEjFjS5D2Otd7sO7uMkzi9bXX1tq',
 	"firstName": "user",
 	"lastName": "one",
@@ -11,9 +11,9 @@ var admin = {
 	"ts": new Date().getTime(),
 	"status": "active",
 	"profile": {},
-	"groups": ['admin'],
+	"groups": ['administrator'],
 	"tenant":{
-		"id": "10d2cb5fc04ce51e06000001",
-		"code": "test"
+		"id": "551286bce603d7e01ab1688e",
+		"code": "DBTN"
 	}
 };

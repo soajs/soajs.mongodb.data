@@ -11,6 +11,7 @@ ddb.users.drop();
 
 var records = [];
 records.push(admin);
+records.push(owner);
 ddb.users.insert(records);
 
 

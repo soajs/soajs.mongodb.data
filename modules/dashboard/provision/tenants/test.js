@@ -72,6 +72,22 @@ var test = {
 										"subject": "Change Account Email at SOAJS"
 									}
 								}
+							},
+							"dashboard": {
+								"package": {
+									"owner": {
+										"acl": {
+											"urac": {},
+											"dashboard": {}
+										}
+									},
+									"consumer": {
+										"acl": {
+											"urac": {},
+											"dashboard": {}
+										}
+									}
+								}
 							}
 						}
 					}
