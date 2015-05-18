@@ -24,6 +24,7 @@ ddb.groups.drop();
 
 records = [];
 records.push(administrator);
+records.push(owner);
 ddb.groups.insert(records);
 
 /* Indexes for users */

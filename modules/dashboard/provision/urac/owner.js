@@ -11,7 +11,7 @@ var owner = {
 	"ts": new Date().getTime(),
 	"status": "active",
 	"profile": {},
-	"groups": ['administrator'],
+	"groups": ['owner'],
 	"tenant":{
 		"id": "551286bce603d7e01ab1688e",
 		"code": "DBTN"

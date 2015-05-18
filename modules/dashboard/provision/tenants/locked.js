@@ -31,16 +31,10 @@ var locked = {
 							"dashboard": {
 								"package": {
 									"owner": {
-										"acl": {
-											"urac": {},
-											"dashboard": {}
-										}
+										"package": "DSBRD_OWNER"
 									},
 									"consumer": {
-										"acl": {
-											"urac": {},
-											"dashboard": {}
-										}
+										"package": "DSBRD_CLIENT"
 									}
 								}
 							}
