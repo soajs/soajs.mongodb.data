@@ -72,6 +72,11 @@ var test = {
 										"subject": "Change Account Email at SOAJS"
 									}
 								}
+							},
+							"dashboard": {
+								"ownerPackage" : "DSBRD_OWNER",
+								"defaultClientPackage": "DSBRD_CLIENT",
+								"clientspackage" : {}
 							}
 						}
 					}

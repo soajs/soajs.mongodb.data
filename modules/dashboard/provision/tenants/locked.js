@@ -29,14 +29,9 @@ var locked = {
 							"mail": {},
 							"urac": {},
 							"dashboard": {
-								"package": {
-									"owner": {
-										"package": "DSBRD_OWNER"
-									},
-									"consumer": {
-										"package": "DSBRD_CLIENT"
-									}
-								}
+								"ownerPackage" : "DSBRD_OWNER",
+								"defaultClientPackage": "DSBRD_CLIENT",
+								"clientspackage" : {}
 							}
 						}					
 					}
