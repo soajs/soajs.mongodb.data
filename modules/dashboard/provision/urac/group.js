@@ -12,7 +12,7 @@ var administrator = {
 	}
 };
 
-var owner = {
+var ownerGrp = {
 	"locked": true,
 	"code": "owner",
 	"name": "Owner Group",
