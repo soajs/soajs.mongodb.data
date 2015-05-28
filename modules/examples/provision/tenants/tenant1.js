@@ -1,7 +1,7 @@
 'use strict';
 var tenant1 = {
 	"_id": ObjectId('54ee2150b7a669fc22b7f6b9'),
-	"code": "TN1",
+	"code": "TNT1",
 	"name": "Client 1",
 	"description": "This is a test tenant client",
 	"oauth": {
