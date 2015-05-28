@@ -30,7 +30,7 @@ var core_services = [
     },
     {
         "name": "example02",
-        "extKeyRequired": true,
+        "extKeyRequired": false,
         "port": 4011,
         "requestTimeout": 30,
         "requestTimeoutRenewal": 5,
