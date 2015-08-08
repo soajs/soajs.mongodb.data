@@ -74,8 +74,11 @@ var dev = {
 				"password": 'soajs key lal massa'
 			},
 			"logger": { //ATTENTION: this is not all the properties for logger
-				"src": true,
-				"level": "debug"
+                "src": true,
+                "level": "debug",
+                "formatter": {
+                    outputMode: 'long'
+                }
 			},
 			"cors": {
 				"enabled": true,
