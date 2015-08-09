@@ -1,4 +1,4 @@
-var ddb = db.getSiblingDB('TEST_urac');
+var ddb = db.getSiblingDB('gctn_urac');
 //provDb.dropDatabase();
 
 /* users */
