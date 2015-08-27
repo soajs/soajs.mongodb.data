@@ -1,11 +1,11 @@
 #!/bin/bash
 
 pushd ./provision
+mongo ./daemons.js
+mongo ./daemon_grpconf.js
 mongo ./environment.js
-mongo ./product.js
-mongo ./tenant.js
-mongo ./services.js
 mongo ./oauth.js
+mongo ./product.js
 mongo ./services.js
-mongo ./environment.js
+mongo ./tenant.js
 popd
