@@ -11,6 +11,7 @@ ddb.users.drop();
 
 var records = [];
 records.push(admin);
+records.push(admin2);
 records.push(owner);
 ddb.users.insert(records);
 
@@ -37,6 +38,7 @@ ddb.groups.drop();
 
 var records = [];
 records.push(admin);
+records.push(admin2);
 ddb.users.insert(records);
 
 
