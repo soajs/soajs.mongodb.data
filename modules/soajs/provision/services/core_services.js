@@ -35,26 +35,31 @@ var core_hosts = [
     {
         "env": "dev",
         "name": "oauth",
-        "ip": "127.0.0.1"
+        "ip": "127.0.0.1",
+        "version": 1
     },
     {
         "env": "dev",
         "name": "urac",
-        "ip": "127.0.0.1"
+        "ip": "127.0.0.1",
+        "version": 1
     },
 	{
 		"env": "dev",
 		"name": "example01",
-		"ip": "127.0.0.1"
+		"ip": "127.0.0.1",
+        "version": 1
 	},
     {
         "env": "dev",
         "name": "example02",
-        "ip": "127.0.0.1"
+        "ip": "127.0.0.1",
+        "version": 1
     },
 	{
 		"env": "dev",
 		"name": "example03",
-		"ip": "127.0.0.1"
+		"ip": "127.0.0.1",
+        "version": 1
 	}
 ];
