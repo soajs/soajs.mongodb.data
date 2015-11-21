@@ -28,6 +28,12 @@ var core_services = [
 		"extKeyRequired": true,
 		"port": 4012,
 		"apis": []
+	},
+	{
+		"name": "example06",
+		"extKeyRequired": true,
+		"port": 4018,
+		"apis": []
 	}
 ];
 
@@ -61,5 +67,11 @@ var core_hosts = [
 		"name": "example03",
 		"ip": "127.0.0.1",
         "version": 1
+	},
+	{
+		"env": "dev",
+		"name": "example06",
+		"ip": "127.0.0.1",
+		"version": 1
 	}
 ];
