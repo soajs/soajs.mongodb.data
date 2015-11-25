@@ -86,6 +86,9 @@ var test = {
 				"urac": {},
 				"example03": {
 					"access": true
+				},
+				"example06": {
+					"access": false
 				}
 			},
 			"_TTL": 86400000, // 24 hours
@@ -96,13 +99,49 @@ var test = {
 						{
 							"expDate": new Date().getTime() + 86400000,
 							"extKey": "aa39b5490c4a4ed0e56d7ec1232a428f7ad78ebb7347db3fc9875cb10c2bce39bbf8aabacf9e00420afb580b15698c04ce10d659d1972ebc53e76b6bbae0c113bee1e23062800bc830e4c329ca913fefebd1f1222295cf2eb5486224044b4d0c",
-							"device": {"allow": [{"family": "chrome", 'major': '41', 'minor': '0', 'patch': {'min': '2222', 'max': '2229'}}], "deny": [{'family': 'IE'}]},
+							"device": {
+								"allow": [{
+									"family": "chrome",
+									'major': '41',
+									'minor': '0',
+									'patch': {'min': '2222', 'max': '2229'}
+								}], "deny": [{'family': 'IE'}]
+							},
 							"geo": {"allow": ["127.0.0.1", "localhost"], "deny": ['121.5.6.7']}
 						}
 					],
 					"config": {
-						"dev":{
-							"urac": {}
+						"dev": {
+							"urac": {},
+							"example06": {
+								"SOAJS": {
+									"IMFV": {
+										"schema":{
+											"commonFields": {
+												"type": {
+													"required": false,
+													"default": "userTEST",
+													"source": ["body.type"],
+													"validation": {
+														"type": "string"
+													}
+												}
+											},
+											"/testRoute": {
+												"commonFields": ["type"],
+												"email": {
+													"required": true,
+													"source": ["body.email"],
+													"validation": {
+														"type": "string",
+														"format": "email"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				},
@@ -123,7 +162,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev":{
+						"dev": {
 							"urac": {}
 						}
 					}
