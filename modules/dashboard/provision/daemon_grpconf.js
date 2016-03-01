@@ -12,4 +12,3 @@ provDb.daemon_grpconf.insert(records);
 
 /* Indexes for daemons */
 provDb.daemon_grpconf.ensureIndex({daemonConfigGroup: 1}, {unique: true});
-provDb.daemon_grpconf.ensureIndex({'daemon': 1}, {unique: true});
