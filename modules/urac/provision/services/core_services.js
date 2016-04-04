@@ -49,6 +49,11 @@ var core_services = [
                         "group": "Administration",
                         'v': "/admin/editUser"
                     },
+	                {
+		                "l": "Edit User Config",
+		                "group": "Administration",
+		                'v': "/admin/editUserConfig"
+	                },
                     {
                         "l": "Add new Group",
                         "group": "Administration",
