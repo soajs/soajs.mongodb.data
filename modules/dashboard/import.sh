@@ -10,4 +10,5 @@ mongo ./product.js
 mongo ./services.js
 mongo ./oauth_urac.js
 mongo ./urac.js
+mongo ./gitAccounts.js
 popd
