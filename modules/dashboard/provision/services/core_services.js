@@ -4,6 +4,11 @@ var core_services = [
 		"port": 4003,
 		"requestTimeout": 30,
 		"requestTimeoutRenewal": 5,
+		"src" : {
+			"provider" : "github",
+			"owner" : "soajs",
+			"repo" : "soajs.dashboard"
+		},
 		"versions": {
 			"1": {
 				"extKeyRequired": true,
@@ -299,6 +304,11 @@ var core_services = [
 		"port": 4001,
 		"requestTimeout": 30,
 		"requestTimeoutRenewal": 5,
+		"src" : {
+			"provider" : "github",
+			"owner" : "soajs",
+			"repo" : "soajs.urac"
+		},
 		"versions": {
 			"1": {
 				"extKeyRequired": true,
