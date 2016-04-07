@@ -1,23 +1,9 @@
 var core_services = [
 	{
-		"name": "controller",
-		"port": 4000,
-		"src": {
-			"provider": "github",
-			"owner": "soajs",
-			"repo": "soajs.controller"
-		}
-	},
-	{
 		"name": "dashboard",
 		"port": 4003,
 		"requestTimeout": 30,
 		"requestTimeoutRenewal": 5,
-		"src" : {
-			"provider" : "github",
-			"owner" : "soajs",
-			"repo" : "soajs.dashboard"
-		},
 		"versions": {
 			"1": {
 				"extKeyRequired": true,
@@ -313,14 +299,22 @@ var core_services = [
 		"port": 4001,
 		"requestTimeout": 30,
 		"requestTimeoutRenewal": 5,
-		"src" : {
-			"provider" : "github",
-			"owner" : "soajs",
-			"repo" : "soajs.urac"
-		},
 		"versions": {
 			"1": {
 				"extKeyRequired": true,
+				"apis": []
+			}
+		}
+	},
+	{
+		"name": "proxy",
+		"port": 4009,
+		"requestTimeout": 30,
+		"requestTimeoutRenewal": 5,
+		"versions": {
+			"1": {
+				"extKeyRequired": true,
+				"awareness": true,
 				"apis": []
 			}
 		}
@@ -329,21 +323,39 @@ var core_services = [
 
 var core_hosts = [
 	{
-		"env": "dev",
+		"env": "dashboard",
 		"name": "controller",
 		"ip": "127.0.0.1",
 		"version": 1
 	},
 	{
-		"env": "dev",
+		"env": "dashboard",
 		"name": "dashboard",
 		"ip": "127.0.0.1",
 		"version": 1
 	},
 	{
-		"env": "dev",
+		"env": "dashboard",
 		"name": "urac",
 		"ip": "127.0.0.1",
 		"version": 1
-	}
+	},
+	{
+		"env": "dashboard",
+		"name": "proxy",
+		"ip": "127.0.0.1",
+		"version": 1
+	},
+	// {
+	// 	"env": "dev",
+	// 	"name": "controller",
+	// 	"ip": "127.0.0.1",
+	// 	"version": 1
+	// },
+	// {
+	// 	"env": "dev",
+	// 	"name": "urac",
+	// 	"ip": "127.0.0.1",
+	// 	"version": 1
+	// }
 ];

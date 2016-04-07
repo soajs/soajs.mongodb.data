@@ -1,39 +1,63 @@
 var core_services = [
     {
         "name": "urac",
-        "extKeyRequired": true,
         "port": 4001,
-        "apis": []
+        "versions": {
+            "1": {
+                "apis": [],
+                "extKeyRequired": true
+            }
+        }
     },
     {
         "name": "oauth",
-        "extKeyRequired": true,
         "port": 4002,
-        "apis": []
+        "versions": {
+            "1": {
+                "apis": [],
+                "extKeyRequired": true
+            }
+        }
     },
 	{
 		"name": "example01",
-		"extKeyRequired": false,
 		"port": 4010,
-		"apis": []
+        "versions": {
+            "1": {
+                "apis": [],
+                "extKeyRequired": false
+            }
+        }
 	},
     {
         "name": "example02",
-        "extKeyRequired": true,
         "port": 4011,
-        "apis": []
+        "versions": {
+            "1": {
+                "apis": [],
+                "extKeyRequired": true
+            }
+        }
     },
 	{
 		"name": "example03",
-		"extKeyRequired": true,
 		"port": 4012,
-		"apis": []
+        "versions": {
+            "1": {
+                "apis": [],
+                "extKeyRequired": true
+            }
+        }
 	},
 	{
 		"name": "example06",
-		"extKeyRequired": true,
 		"port": 4018,
-		"apis": []
+        "versions": {
+            "1": {
+                "apis": [],
+                "extKeyRequired": true
+            }
+        }
 	}
 ];
 
