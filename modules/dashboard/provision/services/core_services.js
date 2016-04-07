@@ -1,5 +1,14 @@
 var core_services = [
 	{
+		"name": "controller",
+		"port": 4000,
+		"src": {
+			"provider": "github",
+			"owner": "soajs",
+			"repo": "soajs.controller"
+		}
+	},
+	{
 		"name": "dashboard",
 		"extKeyRequired": true,
 		"port": 4003,
