@@ -3,7 +3,7 @@ var ddb = db.getSiblingDB('gctn_urac');
 
 /* users */
 var files = listFiles('./urac');
-for(var i = 0; i < files.length; i++) {
+for (var i = 0; i < files.length; i++) {
 	load(files[i].name);
 }
 

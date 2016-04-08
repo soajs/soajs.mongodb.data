@@ -4,7 +4,7 @@ var provDb = db.getSiblingDB('core_provision');
 /* Tenants */
 var files = listFiles('./tenants');
 for (var i = 0; i < files.length; i++) {
-    load(files[i].name);
+	load(files[i].name);
 }
 
 provDb.tenants.drop();
@@ -15,6 +15,6 @@ provDb.tenants.insert(records);
 
 
 /* Indexes for tenants */
-provDb.tenants.ensureIndex({ code: 1 }, { unique: true });
-provDb.tenants.ensureIndex({ 'applications.appId': 1 });
-provDb.tenants.ensureIndex({ 'applications.keys.key': 1 });
+provDb.tenants.ensureIndex({code: 1}, {unique: true});
+provDb.tenants.ensureIndex({'applications.appId': 1});
+provDb.tenants.ensureIndex({'applications.keys.key': 1});
