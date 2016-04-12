@@ -105,7 +105,8 @@ var test = {
 									'major': '41',
 									'minor': '0',
 									'patch': {'min': '2222', 'max': '2229'}
-								}], "deny": [{'family': 'IE'}]
+								}],
+								"deny": [{'family': 'IE'}]
 							},
 							"geo": {"allow": ["127.0.0.1", "localhost"], "deny": ['121.5.6.7']}
 						}
@@ -182,6 +183,42 @@ var test = {
 						{
 							"expDate": new Date().getTime() + 86400000,
 							"extKey": "aa39b5490c4a4ed0e56d7ec1232a428f1c5b5dcabc0788ce563402e233386738fc3eb18234a486ce1667cf70bd0e8b08890a86126cf1aa8d38f84606d8a6346359a61678428343e01319e0b784bc7e2ca267bbaafccffcb6174206e8c83f2a25",
+							"device": {},
+							"geo": {}
+						}
+					],
+					"config": {
+						"dev": {
+							"urac": {}
+						}
+					}
+				}
+			]
+		},
+		{
+			"product": "TPROD",
+			"package": "TPROD_BASI2",
+			"appId": new ObjectId("570697570548600601bfeed7"),
+			"description": "this is a description for app for test tenant for test product and example03 package",
+			"_TTL": 86400000, // 24 hours
+			"acl":{
+				"urac": {},
+				"example03":{
+					"access": true,
+					"apis":{
+						"/info2":{
+							"access":["owner"]
+						}
+					}
+				}
+			},
+			"keys": [
+				{
+					"key": "30bd5fa6a99a5d706aa0f09b2ea4abc7",
+					"extKeys": [
+						{
+							"expDate": new Date().getTime() + 86400000,
+							"extKey": "4232477ed993d167ec13ccf8836c29c45c915dcc058b16f67ae67b07da351854840ca7f55f4d6bf1d6200147c559b34fb9697fdf4c1e5832b79fbb3f863645915fecbb9dd965c7241b2f6edd5b7ace34a528d22b1396a4d109f3ac1eaa88a682",
 							"device": {},
 							"geo": {}
 						}

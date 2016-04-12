@@ -1,18 +1,13 @@
 'use strict';
 var dev = {
-	"_id": ObjectId('55128442e603d7e01ab1688c'),
 	"code": "DEV",
-	"locked": true,
 	"description": "this is the DEV environment",
-	"ips": [
-		"127.0.0.1"
-	],
 	"dbs": {
 		"clusters": {
 			"cluster1": {
 				"servers": [
 					{
-						"host": "127.0.0.1",
+						"host": "localhost",
 						"port": 27017
 					}
 				],
@@ -38,7 +33,7 @@ var dev = {
 			"prefix": "",
 			"session": {
 				"cluster": "cluster1",
-				"name": "core_session",
+				"name": "core_session2",
 				'store': {},
 				"collection": "sessions",
 				'stringify': false,
@@ -62,7 +57,7 @@ var dev = {
 		"config": {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
-				"autoRelaodRegistry": 1000 * 20, // 5 minutes
+				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
 				"maxLogCount":5,
 				"autoRegisterService": true
 			},
@@ -97,6 +92,8 @@ var dev = {
 			"session": {
 				"name": "soajsID",
 				"secret": "this is antoine hage app server",
+				"rolling": false,
+				"unset": 'keep',
 				"cookie": {"path": '/', "httpOnly": true, "secure": false, "domain": "soajs.com", "maxAge": null},
 				"resave": false,
 				"saveUninitialized": false

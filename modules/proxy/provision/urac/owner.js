@@ -12,8 +12,8 @@ var owner = {
 	"status": "active",
 	"profile": {},
 	"groups": ['owner'],
-	"tenant": {
-		"id": "10d2cb5fc04ce51e06000001",
-		"code": "gctn"
+	"tenant":{
+		"id": "551286bce603d7e01ab1688e",
+		"code": "DBTN"
 	}
 };

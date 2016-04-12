@@ -154,6 +154,34 @@ var test = {
 					}
 				}
 			]
+		},
+		{
+			"product": "TPROD",
+			"package": "TPROD_BASI2",
+			"appId": "570697570548600601bfeed7",
+			"description": "this is a description for app for test tenant for test product and example03 package",
+			"_TTL": 86400000, // 24 hours
+			"acl":{
+				"urac":{}
+			},
+			"keys": [
+				{
+					"key": "30bd5fa6a99a5d706aa0f09b2ea4abc7",
+					"extKeys": [
+						{
+							"expDate": new Date().getTime() + 86400000,
+							"extKey": "4232477ed993d167ec13ccf8836c29c45c915dcc058b16f67ae67b07da351854840ca7f55f4d6bf1d6200147c559b34fb9697fdf4c1e5832b79fbb3f863645915fecbb9dd965c7241b2f6edd5b7ace34a528d22b1396a4d109f3ac1eaa88a682",
+							"device": {},
+							"geo": {}
+						}
+					],
+					"config": {
+						"dev": {
+							"urac": {}
+						}
+					}
+				}
+			]
 		}
 	]
 };
