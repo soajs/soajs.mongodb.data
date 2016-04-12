@@ -62,7 +62,7 @@ var dev = {
 		"config": {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
-				"autoRelaodRegistry": 1000 * 20, // 5 minutes
+				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
 				"maxLogCount":5,
 				"autoRegisterService": true
 			},
