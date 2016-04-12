@@ -5,7 +5,8 @@ var core_services = [
 		"src": {
 			"provider": "github",
 			"owner": "soajs",
-			"repo": "soajs.controller"
+			"repo": "soajs.controller",
+			"cmd": ["ls"]
 		}
 	},
 	{
