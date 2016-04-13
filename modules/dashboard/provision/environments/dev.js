@@ -72,9 +72,9 @@ var dev = {
 			},
 			"logger": { //ATTENTION: this is not all the properties for logger
                 "src": true,
-                "level": "debug",
+                "level": "fatal",//minimizing logging as much as possible
                 "formatter": {
-                    outputMode: 'long'
+                    outputMode: 'short'
                 }
 			},
 			"cors": {
