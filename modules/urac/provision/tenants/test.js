@@ -46,6 +46,7 @@ var test = {
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
+								"encryptPWDonAdd": true,
 								"link": {
 									"addUser": "http://dashboard.soajs.org/#/setNewPassword",
 									"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
