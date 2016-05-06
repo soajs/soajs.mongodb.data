@@ -46,7 +46,7 @@ var test = {
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
-								"encryptPWDonAdd": true,
+								// "optionalAlgorithm": 'md5',
 								"link": {
 									"addUser": "http://dashboard.soajs.org/#/setNewPassword",
 									"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
@@ -139,7 +139,8 @@ var test = {
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
-								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
+								"tokenExpiryTTL": 2 * 24 * 3600 * 1000,
+								"optionalAlgorithm": 'md5'
 							}
 						}
 					}
