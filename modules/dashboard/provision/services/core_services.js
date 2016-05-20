@@ -12,7 +12,7 @@ var core_services = [
 	{
 		"name": "dashboard",
 		"port": 4003,
-		"requestTimeout": 30,
+		"requestTimeout": 60,
 		"requestTimeoutRenewal": 5,
 		"src" : {
 			"provider" : "github",
