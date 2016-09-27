@@ -32,6 +32,25 @@ var dev = {
 						"auto_reconnect": true
 					}
 				}
+			},
+			"es1": {
+				"servers": [
+					{
+						"host": "127.0.0.1",
+						"port": 9200
+					}
+				],
+				"credentials": null,
+				"URLParam": {
+					"protocol": "http"
+				},
+				"extraParam": {
+					"requestTimeout": 30000,
+					"keepAlive": true,
+					"maxSockets": 300,
+					"number_of_shards": 2,
+					"number_of_replicas": 1
+				}
 			}
 		},
 		"config": {
@@ -49,6 +68,10 @@ var dev = {
 			"urac": {
 				"cluster": "cluster1",
 				"tenantSpecific": true
+			},
+			"es": {
+				"cluster": "es1",
+				"tenantSpecific": false
 			}
 		}
 	},
