@@ -41,7 +41,7 @@ var dev = {
 				},
 				"extraParam": {
 					"maxSockets": 30,
-					"keepAlive": false,
+					"keepAlive": true,
 					"requestTimeout": 30000
 				}
 			}
@@ -58,15 +58,19 @@ var dev = {
 			}
 		},
 		"databases": {
-			"test_urac": {
+			"urac": {
 				"cluster": "cluster1",
 				"tenantSpecific": true
 			},
-			"test_myDatabase": {
+			"myDatabase": {
 				"cluster": "cluster1",
 				"tenantSpecific": false
 			},
-			"test_esClient": {
+			"myDatabase2": {
+				"cluster": "cluster1",
+				"tenantSpecific": true
+			},
+			"esClient": {
 				"cluster": "es1",
 				"tenantSpecific": false
 			}

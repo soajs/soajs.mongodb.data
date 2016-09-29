@@ -16,6 +16,9 @@ var locked = {
 				"dev":{
 					"dummy": {
 						"access": false
+					},
+					"dummy3": {
+						"access": false
 					}
 				}
 			}
