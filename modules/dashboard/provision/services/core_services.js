@@ -320,7 +320,7 @@ var core_services = [
 			"repo" : "soajs.urac"
 		},
 		"versions": {
-			"1": {
+			"2": {
 				"extKeyRequired": true,
 				"apis": []
 			}
@@ -345,6 +345,6 @@ var core_hosts = [
 		"env": "dev",
 		"name": "urac",
 		"ip": "127.0.0.1",
-		"version": 1
+		"version": 2
 	}
 ];

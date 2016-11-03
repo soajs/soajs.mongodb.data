@@ -5,6 +5,7 @@ var soajs_account = {
 	"label": "SOAJS Open Source",
 	"owner": "soajs",
 	"provider": "github",
+	"domain": "github.com",
 	"type": "organization",
 	"access": "public",
 	"repos": [
