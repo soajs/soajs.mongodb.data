@@ -54,6 +54,23 @@ var test = {
 								}
 							},
 							"urac": {
+								"passportLogin": {
+									"twitter": {
+										"clientID": "qywH8YMduIsKA2RRlUkS50kCZ",
+										"clientSecret": "aodnXVCBijQcS8sJrcLM3ULgCl9VEoqqwu00XgamRUv5qm8bF1",
+										"callbackURL": "http://local-widget.com/urac/login/success"
+									},
+									"facebook": {
+										clientID: '331502413866510',
+										clientSecret: '1a07a7eb9c9884dc5d148106ede830b2',
+										"callbackURL": "http://local-widget.com/urac/login/success?mode=facebook"
+									},
+									"google": {
+										clientID: '393278808961-7qahk8kadr2jhbo05o84pbp5tc774a1l.apps.googleusercontent.com',
+										clientSecret: 'sdSpS8FLeUvc0UBs_z8m4f89',
+										"callbackURL": "http://local-widget.com/urac/login/success"
+									}
+								},
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
 								// "optionalAlgorithm": 'md5',
@@ -152,7 +169,14 @@ var test = {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
 								"tokenExpiryTTL": 2 * 24 * 3600 * 1000,
-								"optionalAlgorithm": 'md5'
+								"optionalAlgorithm": 'md5',
+								"passportLogin": {
+									"facebook": {
+										clientID: '123',
+										clientSecret: '1234',
+										"callbackURL": "http://local-widget.agmkpl.com/urac/login/success?mode=facebook"
+									}
+								}
 							}
 						}
 					}

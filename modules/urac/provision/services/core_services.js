@@ -149,6 +149,6 @@ var core_hosts = [
 		"name": "urac",
 		"ip": "127.0.0.1",
 		"hostname": hostname().toLowerCase(),
-		"version": 1
+		"version": 2
 	}
 ];
