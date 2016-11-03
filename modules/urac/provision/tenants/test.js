@@ -35,7 +35,17 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"dashboardui":{},
+							"tenantCodes": {
+								"temp": {
+									"mail": {
+										"from": 'me@localhost.com',
+										"transport": {
+											"type": "sendmail",
+											"options": {}
+										}
+									}
+								}
+							},
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -108,11 +118,12 @@ var test = {
 					"config": {
 						"dev": {
 							"urac": {
+								//"validateJoin": true,
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
 								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
 							}
-						}						
+						}
 					}
 				}
 			]
@@ -137,6 +148,7 @@ var test = {
 					"config": {
 						"dev": {
 							"urac": {
+								//"validateJoin": true,
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
 								"tokenExpiryTTL": 2 * 24 * 3600 * 1000,

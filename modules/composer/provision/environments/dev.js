@@ -1,18 +1,13 @@
 'use strict';
 var dev = {
-	"_id": ObjectId('55128442e603d7e01ab1688c'),
 	"code": "DEV",
-	"locked": true,
 	"description": "this is the DEV environment",
-	"ips": [
-		"127.0.0.1"
-	],
 	"dbs": {
 		"clusters": {
 			"cluster1": {
 				"servers": [
 					{
-						"host": "127.0.0.1",
+						"host": "localhost",
 						"port": 27017
 					}
 				],
@@ -45,11 +40,9 @@ var dev = {
 					"protocol": "http"
 				},
 				"extraParam": {
-					"requestTimeout": 30000,
+					"maxSockets": 30,
 					"keepAlive": true,
-					"maxSockets": 300,
-					"number_of_shards": 2,
-					"number_of_replicas": 1
+					"requestTimeout": 30000
 				}
 			}
 		},
@@ -57,7 +50,7 @@ var dev = {
 			"prefix": "",
 			"session": {
 				"cluster": "cluster1",
-				"name": "core_session",
+				"name": "core_session2",
 				'store': {},
 				"collection": "sessions",
 				'stringify': false,
@@ -69,7 +62,15 @@ var dev = {
 				"cluster": "cluster1",
 				"tenantSpecific": true
 			},
-			"es": {
+			"myDatabase": {
+				"cluster": "cluster1",
+				"tenantSpecific": false
+			},
+			"myDatabase2": {
+				"cluster": "cluster1",
+				"tenantSpecific": true
+			},
+			"esClient": {
 				"cluster": "es1",
 				"tenantSpecific": false
 			}
@@ -120,6 +121,8 @@ var dev = {
 			"session": {
 				"name": "soajsID",
 				"secret": "this is antoine hage app server",
+				"rolling": false,
+				"unset": 'keep',
 				"cookie": {"path": '/', "httpOnly": true, "secure": false, "domain": "soajs.com", "maxAge": null},
 				"resave": false,
 				"saveUninitialized": false
