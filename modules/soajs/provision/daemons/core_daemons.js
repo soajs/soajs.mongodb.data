@@ -7,5 +7,14 @@ var core_daemons = [
                 "jobs": []
             }
         }
+    },
+    {
+        "name": "helloDaemonCron",
+        "port": 4201,
+        "versions": {
+            "1": {
+                "jobs": []
+            }
+        }
     }
 ];
