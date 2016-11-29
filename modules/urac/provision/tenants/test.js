@@ -70,6 +70,11 @@ var test = {
 										clientID: '393278808961-7qahk8kadr2jhbo05o84pbp5tc774a1l.apps.googleusercontent.com',
 										clientSecret: 'sdSpS8FLeUvc0UBs_z8m4f89',
 										callbackURL: "http://local-widget.com/urac/login/success"
+									},
+									"github": {
+										clientID: '79729863675e2513ae44',
+										clientSecret: '3f37cea1cff3e2ead1a11d96f9961e27293739e4',
+										callbackURL: "http://local-widget.com/urac/login/success?mode=github"
 									}
 								},
 								"hashIterations": 1024, //used by hasher
