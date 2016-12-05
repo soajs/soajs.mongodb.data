@@ -24,6 +24,22 @@ for (var i = 0; i < files.length; i++) {
 var records = products;
 provDb.products.insert(records);
 
+/*
+ Import Services
+ */
+provDb.services.remove({});
+provDb.hosts.remove({});
+
+var files = listFiles('./provision/services');
+for (var i = 0; i < files.length; i++) {
+	load(files[i].name);
+}
+
+var records = services;
+provDb.services.insert(records);
+
+var records = hosts;
+provDb.hosts.insert(records);
 
 /*
  Import Tenants
@@ -75,59 +91,3 @@ records = [];
 records.push(dev);
 records.push(dashboard);
 provDb.environment.insert(records);
-
-var updateDocument = {
-	"dbs.clusters.dash_cluster.servers" : [
-		{
-			"host": this.mongoIp,
-			"port": this.mongoPort
-		}
-	]
-};
-
-if(this.mongoUser && this.mongoUser !== "" && this.mongoPwd && this.mongoPwd !== "" && this.mongoAuth && this.mongoAuth !== ""){
-	updateDocument['dbs.clusters.dash_cluster.credentials'] = {
-		username: this.mongoUser,
-		password: this.mongoPwd
-	};
-	updateDocument['dbs.clusters.dash_cluster.URLParam.authSource']= this.mongoAuth;
-}
-provDb.environment.update({"code": "DASHBOARD"}, {$set: updateDocument });
-
-var updateDocument = {
-	"dbs.clusters.dev_cluster.servers" : [
-		{
-			"host": this.mongoIp,
-			"port": this.mongoPort
-		}
-	]
-};
-
-if(this.mongoUser && this.mongoUser !== "" && this.mongoPwd && this.mongoPwd !== "" && this.mongoAuth && this.mongoAuth !== ""){
-	updateDocument['dbs.clusters.dev_cluster.credentials'] = {
-		username: this.mongoUser,
-		password: this.mongoPwd
-	};
-	updateDocument['dbs.clusters.dev_cluster.URLParam.authSource']= this.mongoAuth;
-}
-provDb.environment.update({"code": "DEV"}, {$set: updateDocument });
-
-
-/*
- Updated Dev Env, add databases
- */
-provDb.environment.update(
-	{"code": "DEV"},
-	{
-		"$set": {
-			"dbs.databases.myDatabase": {
-				"cluster": "dev_cluster",
-				"tenantSpecific": false
-			},
-			"dbs.databases.users": {
-				"cluster": "dev_cluster",
-				"tenantSpecific": true
-			}
-		}
-	}
-);
