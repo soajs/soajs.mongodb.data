@@ -4,6 +4,28 @@ var dev = {
 	"code": "DEV",
 	"locked": true,
 	"description": "this is the DEV environment",
+	"deployer": {
+        "type": "manual",
+        "selected": "container.docker.local",
+        "container": {
+            "docker": {
+                "local": {
+                    "socketPath": "/var/run/docker.sock"
+                },
+                "remote": {
+                    "nodes": []
+                }
+            },
+            "kubernetes": {
+                "local": {
+
+                },
+                "remote": {
+                    "nodes": []
+                }
+            }
+        }
+    },
 	"dbs": {
 		"clusters": {
 			"cluster1": {
