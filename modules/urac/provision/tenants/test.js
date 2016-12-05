@@ -58,17 +58,23 @@ var test = {
 									"twitter": {
 										"clientID": "qywH8YMduIsKA2RRlUkS50kCZ",
 										"clientSecret": "aodnXVCBijQcS8sJrcLM3ULgCl9VEoqqwu00XgamRUv5qm8bF1",
-										"callbackURL": "http://local-widget.com/urac/login/success"
+										"callbackURL": "http://local-widget.com/urac/login/success",
+										userProfileURL: "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
 									},
 									"facebook": {
 										clientID: '331502413866510',
 										clientSecret: '1a07a7eb9c9884dc5d148106ede830b2',
-										"callbackURL": "http://local-widget.com/urac/login/success?mode=facebook"
+										callbackURL: "http://local-widget.com/urac/login/success?mode=facebook"
 									},
 									"google": {
 										clientID: '393278808961-7qahk8kadr2jhbo05o84pbp5tc774a1l.apps.googleusercontent.com',
 										clientSecret: 'sdSpS8FLeUvc0UBs_z8m4f89',
-										"callbackURL": "http://local-widget.com/urac/login/success"
+										callbackURL: "http://local-widget.com/urac/login/success"
+									},
+									"github": {
+										clientID: '79729863675e2513ae44',
+										clientSecret: '3f37cea1cff3e2ead1a11d96f9961e27293739e4',
+										callbackURL: "http://local-widget.com/urac/login/success?mode=github"
 									}
 								},
 								"hashIterations": 1024, //used by hasher
