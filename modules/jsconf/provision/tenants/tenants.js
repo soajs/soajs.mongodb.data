@@ -110,7 +110,7 @@ var tenants = [
 										},
 										"changeUserStatus": {
 											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ ts|date('F jS, Y') }}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
 										},
 										"changeEmail": {
 											"subject": "Change Account Email at SOAJS",
@@ -153,7 +153,7 @@ var tenants = [
 										},
 										"changeUserStatus": {
 											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ ts|date('F jS, Y') }}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
 										},
 										"changeEmail": {
 											"subject": "Change Account Email at SOAJS",
@@ -223,7 +223,7 @@ var tenants = [
 										},
 										"changeUserStatus": {
 											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ ts|date('F jS, Y') }}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
 										},
 										"changeEmail": {
 											"subject": "Change Account Email at SOAJS",
@@ -266,7 +266,7 @@ var tenants = [
 										},
 										"changeUserStatus": {
 											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ ts|date('F jS, Y') }}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
 										},
 										"changeEmail": {
 											"subject": "Change Account Email at SOAJS",

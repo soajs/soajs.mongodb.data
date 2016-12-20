@@ -104,7 +104,7 @@ var test = {
 									"changeUserStatus": {
 										"subject": "Account Status changed at SOAJS",
 										//use custom HTML
-										"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ ts|date('F jS, Y') }}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
+										"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ts}}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
 									},
 									"changeEmail": {
 										"subject": "Change Account Email at SOAJS",
