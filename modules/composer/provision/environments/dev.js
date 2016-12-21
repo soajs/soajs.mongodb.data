@@ -44,10 +44,27 @@ var dev = {
 					"keepAlive": true,
 					"requestTimeout": 30000
 				}
+			},
+			"es2": {
+				"servers": [
+					{
+						"host": "127.0.0.1",
+						"port": 9200
+					}
+				],
+				"credentials": null,
+				"URLParam": {
+					"protocol": "http"
+				},
+				"extraParam": {
+					"maxSockets": 30,
+					"keepAlive": false,
+					"requestTimeout": 30000
+				}
 			}
 		},
 		"config": {
-			"prefix": "",
+			"prefix": "test_",
 			"session": {
 				"cluster": "cluster1",
 				"name": "core_session2",
@@ -72,6 +89,10 @@ var dev = {
 			},
 			"esClient": {
 				"cluster": "es1",
+				"tenantSpecific": false
+			},
+			"esClient2": {
+				"cluster": "es2",
 				"tenantSpecific": false
 			}
 		}
