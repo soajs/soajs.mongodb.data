@@ -2,8 +2,30 @@
 var dev = {
 	"_id": ObjectId('55128442e603d7e01ab1688c'),
 	"code": "DEV",
-	"locked" : true,
+	"locked": true,
 	"description": "this is the DEV environment",
+	"deployer": {
+        "type": "manual",
+        "selected": "container.docker.local",
+        "container": {
+            "docker": {
+                "local": {
+                    "socketPath": "/var/run/docker.sock"
+                },
+                "remote": {
+                    "nodes": []
+                }
+            },
+            "kubernetes": {
+                "local": {
+
+                },
+                "remote": {
+                    "nodes": []
+                }
+            }
+        }
+    },
 	"dbs": {
 		"clusters": {
 			"cluster1": {
@@ -60,7 +82,7 @@ var dev = {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
 				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
-				"maxLogCount":5,
+				"maxLogCount": 5,
 				"autoRegisterService": true
 			},
 			"agent": {
@@ -71,11 +93,11 @@ var dev = {
 				"password": 'soajs key lal massa'
 			},
 			"logger": { //ATTENTION: this is not all the properties for logger
-                "src": true,
-                "level": "debug",
-                "formatter": {
-                    outputMode: 'long'
-                }
+				"src": true,
+				"level": "fatal",//minimizing logging as much as possible
+				"formatter": {
+					outputMode: 'short'
+				}
 			},
 			"cors": {
 				"enabled": true,
@@ -89,14 +111,24 @@ var dev = {
 				"grants": ['password', 'refresh_token'],
 				"debug": false
 			},
-			"ports": {"controller": 4000, "maintenanceInc": 1000, "randomInc": 100},
+			"ports": {
+				"controller": 4000,
+				"maintenanceInc": 1000,
+				"randomInc": 100
+			},
 			"cookie": {"secret": "this is a secret sentence"},
 			"session": {
 				"name": "soajsID",
 				"secret": "this is antoine hage app server",
 				"rolling": false,
 				"unset": 'keep',
-				"cookie": {"path": '/', "httpOnly": true, "secure": false, "domain": "soajs.com", "maxAge": null},
+				"cookie": {
+					"path": '/',
+					"httpOnly": true,
+					"secure": false,
+					"domain": "soajs.com",
+					"maxAge": null
+				},
 				"resave": false,
 				"saveUninitialized": false
 			}

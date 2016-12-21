@@ -9,5 +9,7 @@ for (var i = 0; i < files.length; i++) {
 provDb.oauth_urac.drop();
 
 var records = [];
-records.push(oauthuser);
+records.push(oauthTestUser);
+records.push(test);
+
 provDb.oauth_urac.insert(records);

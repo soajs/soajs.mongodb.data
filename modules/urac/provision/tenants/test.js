@@ -35,7 +35,17 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"dashboardui":{},
+							"tenantCodes": {
+								"temp": {
+									"mail": {
+										"from": 'me@localhost.com',
+										"transport": {
+											"type": "sendmail",
+											"options": {}
+										}
+									}
+								}
+							},
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -44,8 +54,32 @@ var test = {
 								}
 							},
 							"urac": {
+								"passportLogin": {
+									"twitter": {
+										"clientID": "qywH8YMduIsKA2RRlUkS50kCZ",
+										"clientSecret": "aodnXVCBijQcS8sJrcLM3ULgCl9VEoqqwu00XgamRUv5qm8bF1",
+										"callbackURL": "http://local-widget.com/urac/login/success",
+										userProfileURL: "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
+									},
+									"facebook": {
+										clientID: '331502413866510',
+										clientSecret: '1a07a7eb9c9884dc5d148106ede830b2',
+										callbackURL: "http://local-widget.com/urac/login/success?mode=facebook"
+									},
+									"google": {
+										clientID: '393278808961-7qahk8kadr2jhbo05o84pbp5tc774a1l.apps.googleusercontent.com',
+										clientSecret: 'sdSpS8FLeUvc0UBs_z8m4f89',
+										callbackURL: "http://local-widget.com/urac/login/success"
+									},
+									"github": {
+										clientID: '79729863675e2513ae44',
+										clientSecret: '3f37cea1cff3e2ead1a11d96f9961e27293739e4',
+										callbackURL: "http://local-widget.com/urac/login/success?mode=github"
+									}
+								},
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
+								// "optionalAlgorithm": 'md5',
 								"link": {
 									"addUser": "http://dashboard.soajs.org/#/setNewPassword",
 									"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
@@ -70,7 +104,7 @@ var test = {
 									"changeUserStatus": {
 										"subject": "Account Status changed at SOAJS",
 										//use custom HTML
-										"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ ts|date('F jS, Y') }}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
+										"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ts}}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
 									},
 									"changeEmail": {
 										"subject": "Change Account Email at SOAJS",
@@ -107,11 +141,12 @@ var test = {
 					"config": {
 						"dev": {
 							"urac": {
+								//"validateJoin": true,
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
 								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
 							}
-						}						
+						}
 					}
 				}
 			]
@@ -136,9 +171,18 @@ var test = {
 					"config": {
 						"dev": {
 							"urac": {
+								//"validateJoin": true,
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
-								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
+								"tokenExpiryTTL": 2 * 24 * 3600 * 1000,
+								"optionalAlgorithm": 'md5',
+								"passportLogin": {
+									"facebook": {
+										clientID: '123',
+										clientSecret: '1234',
+										"callbackURL": "http://local-widget.agmkpl.com/urac/login/success?mode=facebook"
+									}
+								}
 							}
 						}
 					}

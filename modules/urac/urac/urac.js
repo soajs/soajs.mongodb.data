@@ -37,3 +37,7 @@ ddb.groups.insert(records);
 
 /* Indexes for users */
 ddb.groups.ensureIndex({code: 1}, {unique: true});
+
+
+var ddb2 = db.getSiblingDB('temp_urac');
+ddb2.dropDatabase();

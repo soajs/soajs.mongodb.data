@@ -5,13 +5,14 @@ var core_services = [
 		"src": {
 			"provider": "github",
 			"owner": "soajs",
-			"repo": "soajs.controller"
+			"repo": "soajs.controller",
+			"cmd": ["ls"]
 		}
 	},
 	{
 		"name": "dashboard",
 		"port": 4003,
-		"requestTimeout": 30,
+		"requestTimeout": 60,
 		"requestTimeoutRenewal": 5,
 		"src" : {
 			"provider" : "github",
@@ -322,6 +323,10 @@ var core_services = [
 			"1": {
 				"extKeyRequired": true,
 				"apis": []
+			},
+			"2": {
+				"extKeyRequired": true,
+				"apis": []
 			}
 		}
 	}
@@ -332,18 +337,21 @@ var core_hosts = [
 		"env": "dev",
 		"name": "controller",
 		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
 		"version": 1
 	},
 	{
 		"env": "dev",
 		"name": "dashboard",
 		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
 		"version": 1
 	},
 	{
 		"env": "dev",
 		"name": "urac",
 		"ip": "127.0.0.1",
-		"version": 1
+		"hostname": hostname().toLowerCase(),
+		"version": 2
 	}
 ];

@@ -3,7 +3,7 @@ var provDb = db.getSiblingDB('core_provision');
 
 var files = listFiles('./environments');
 for (var i = 0; i < files.length; i++) {
-    load(files[i].name);
+	load(files[i].name);
 }
 
 provDb.environment.drop();
@@ -14,4 +14,4 @@ records.push(dev);
 provDb.environment.insert(records);
 
 /* Indexes for products */
-provDb.environment.ensureIndex({ code: 1 }, { unique: true });
+provDb.environment.ensureIndex({code: 1}, {unique: true});

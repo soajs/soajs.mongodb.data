@@ -16,6 +16,13 @@ var testProduct = {
 			"_TTL": 86400000 // 24 hours
 		},
 		{
+			"code": "TPROD_BASI2",
+			"name": "basic package",
+			"description": "this is a description for test product basic package",
+			"acl": {},
+			"_TTL": 86400000 // 24 hours
+		},
+		{
 			"code": "TPROD_EXAMPLE03",
 			"name": "example03 package",
 			"description": "this is a description for test product example03 package",

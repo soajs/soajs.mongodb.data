@@ -1,5 +1,16 @@
 var provDb = db.getSiblingDB('core_provision');
 
+provDb.daemons.drop();
+provDb.daemon_grpconf.drop();
+
+var files = listFiles('./daemons');
+for(var i = 0; i < files.length; i++) {
+	load(files[i].name);
+}
+
+provDb.daemons.insert(core_daemons);
+provDb.daemon_grpconf.insert(core_daemon_grpconf);
+
 var files = listFiles('./services');
 for(var i = 0; i < files.length; i++) {
     load(files[i].name);

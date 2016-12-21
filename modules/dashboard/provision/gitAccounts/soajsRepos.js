@@ -5,56 +5,39 @@ var soajs_account = {
 	"label": "SOAJS Open Source",
 	"owner": "soajs",
 	"provider": "github",
+	"domain": "github.com",
 	"type": "organization",
 	"access": "public",
 	"repos": [
 		{
 			"name": "soajs/soajs.controller",
-			"type": "service"
+			"type": "service",
+			"configBranch": "develop"
 		},
 		{
 			"name": "soajs/soajs.dashboard",
-			"type": "service"
+			"type": "service",
+			"configBranch": "develop"
 		},
 		{
 			"name": "soajs/soajs.prx",
-			"type": "service"
+			"type": "service",
+			"configBranch": "develop"
 		},
 		{
 			"name": "soajs/soajs.urac",
-			"type": "service"
+			"type": "service",
+			"configBranch": "develop"
 		},
-		//{
-		//	"name": "soajs/soajs.examples",
-		//	"type": "multi",
-		//	"configSHA": [
-		//		{
-		//			"path": "config.js"
-		//		},
-		//		{
-		//			"path": "example01/config.js"
-		//		},
-		//		{
-		//			"path": "example02/config.js"
-		//		},
-		//		{
-		//			"path": "example03/config.js"
-		//		},
-		//		{
-		//			"path": "example04/config.js"
-		//		},
-		//		{
-		//			"path": "hello_world/config.js"
-		//		}
-		//	]
-		//},
 		{
 			"name": "soajs/soajs.gcs",
-			"type": "service"
+			"type": "service",
+			"configBranch": "develop"
 		},
 		{
 			"name": "soajs/soajs.oauth",
-			"type": "service"
+			"type": "service",
+			"configBranch": "develop"
 		}
 	]
 };
