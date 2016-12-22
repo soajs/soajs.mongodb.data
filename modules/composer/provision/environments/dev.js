@@ -122,7 +122,7 @@ var dev = {
                 "src": true,
                 "level": "debug",
                 "formatter": {
-                    outputMode: 'long'
+                    outputMode: 'short'
                 }
 			},
 			"cors": {

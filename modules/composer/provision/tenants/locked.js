@@ -15,19 +15,23 @@ var locked = {
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
 			"keys": [
 				{
-					"key": "38145c67717c73d3febd16df38abf311",
+					"key": "d1eaaf5fdc35c11119330a8a0273fee9",
 					"extKeys": [
 						{
 							"expDate": new Date().getTime() + 7 * 24 * 3600 * 1000, // + 7 days
-							"extKey": "9b96ba56ce934ded56c3f21ac9bdaddc8ba4782b7753cf07576bfabcace8632eba1749ff1187239ef1f56dd74377aa1e5d0a1113de2ed18368af4b808ad245bc7da986e101caddb7b75992b14d6a866db884ea8aee5ab02786886ecf9f25e974",
+							"extKey": "aa39b5490c4a4ed0e56d7ec1232a428f771e8bb83cfcee16de14f735d0f5da587d5968ec4f785e38570902fd24e0b522b46cb171872d1ea038e88328e7d973ff47d9392f72b2d49566209eb88eb60aed8534a965cf30072c39565bd8d72f68ac",
 							"device": null,
-							"geo": null
+							"geo": null,
+							"env": "DEV"
 						}
 					],
 					"config": {
 						"dev":{
 							"dummy": {
 								
+							},
+							"aggregator":{
+								"a": "B"
 							}
 						}
 					}
