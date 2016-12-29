@@ -41,14 +41,14 @@ var gc_posts = {
 				"/list": {
 					"_apiInfo": {
 						"l": "List Entries",
-						"group": "Pages",
+						"group": "Posts",
 						"groupMain": true
 					}
 				},
 				"/add": {
 					"_apiInfo": {
 						"l": "Add Page",
-						"group": "Pages"
+						"group": "Posts"
 					},
 					"commonFields": [
 						"title",
@@ -58,7 +58,7 @@ var gc_posts = {
 				"/update": {
 					"_apiInfo": {
 						"l": "Update Page",
-						"group": "Pages"
+						"group": "Posts"
 					},
 					"commonFields": [
 						"title",
@@ -69,7 +69,7 @@ var gc_posts = {
 				"/get": {
 					"_apiInfo": {
 						"l": "Get One Page",
-						"group": "Pages"
+						"group": "Posts"
 					},
 					"commonFields": [
 						"id"
@@ -78,15 +78,15 @@ var gc_posts = {
 				"/delete": {
 					"_apiInfo": {
 						"l": "Delete Page",
-						"group": "Pages"
+						"group": "Posts"
 					},
 					"commonFields": [
 						"id"
 					]
 				}
 			},
-			"serviceName": "gc_pages",
-			"servicePort": 4500,
+			"serviceName": "gc_posts",
+			"servicePort": 4501,
 			"requestTimeout": 30,
 			"requestTimeoutRenewal": 5,
 			"awareness": false,

@@ -28,6 +28,13 @@ provDb.hosts.insert({
 
 provDb.hosts.insert({
 	"env": "dev",
+	"name": "gc_posts",
+	"ip": "127.0.0.1",
+	"hostname": "gc_posts.local"
+});
+
+provDb.hosts.insert({
+	"env": "dev",
 	"name": "urac",
 	"ip": "127.0.0.1",
 	"hostname": "urac.local"

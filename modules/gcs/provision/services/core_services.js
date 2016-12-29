@@ -44,14 +44,14 @@ var core_services = [
 	{
 		"gcId": "55c0c5aee0e554410b76dbe8",
 		"name": "gc_posts",
-		"port": 4600,
+		"port": 4501,
 		"awareness": false,
 		"requestTimeout": 30,
 		"requestTimeoutRenewal": 5,
 		"gcV": 1,
 		"versions": {
 			"1": {
-				"extKeyRequired": true,
+				"extKeyRequired": false,
 				"apis": []
 			}
 		}
