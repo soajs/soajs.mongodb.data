@@ -61,7 +61,13 @@ var test = {
 							"geo": {}
 						}
 					],
-					"config": {}
+					"config": {
+						"dev": {
+							"oauth": {
+								"loginMode": 'urac'
+							}
+						}
+					}
 				}
 			]
 		}

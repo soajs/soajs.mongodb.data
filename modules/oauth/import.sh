@@ -7,3 +7,6 @@ mongo ./product.js
 mongo ./services.js
 mongo ./tenant.js
 popd
+pushd ./urac
+mongo ./urac.js
+popd
