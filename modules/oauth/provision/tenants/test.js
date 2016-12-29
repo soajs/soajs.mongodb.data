@@ -16,11 +16,6 @@ var test = {
 			"package": "TPROD_BASIC",
 			"appId": ObjectId("30d2cb5fc04ce51e06000001"),
 			"description": "this is a description for app for test tenant for test product and basic package",
-			"acl": {
-				"urac": {},
-				"oauth": {},
-				"dashboard": {}
-			},
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
 			"keys": [
 				{
@@ -48,7 +43,7 @@ var test = {
 			"product": "TPROD",
 			"package": "TPROD_BASIC",
 			"appId": ObjectId("30d2cb5fc04ce51e06000002"),
-			"description": "this is a description for app for test tenant for test product and basic package, and with example03 in acl",
+			"description": "this is a description for app for test tenant for test product and basic package",
 			"_TTL": 86400000, // 24 hours
 			"keys": [
 				{
