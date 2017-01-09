@@ -30,6 +30,7 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"model": "mongo",
 							"oauth": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32 //used by hasher
