@@ -30,17 +30,8 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"tenantCodes": {
-								"temp": {
-									"mail": {
-										"from": 'me@localhost.com',
-										"transport": {
-											"type": "sendmail",
-											"options": {}
-										}
-									}
-								}
-							},
+							"tenantCodes": {},
+							"model": "mongo",
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
