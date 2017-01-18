@@ -63,6 +63,13 @@ var test = {
 										callbackURL: "http://local-widget.com/urac/login/success?mode=github"
 									}
 								},
+								"ldapServer": {
+									host: 'ldap://127.0.0.1',
+									port: 10389,
+									baseDN: 'ou=users,ou=system',
+									adminUser: 'uid=admin, ou=system',
+									adminPassword: 'secret'
+								},
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
 								// "optionalAlgorithm": 'md5',
