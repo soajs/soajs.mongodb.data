@@ -77,6 +77,7 @@ var dev = {
 	},
 	"services": {
 		"controller": {
+			"port": 4000,
 			"maxPoolSize": 100,
 			"authorization": true,
 			"requestTimeout": 30,
@@ -88,9 +89,6 @@ var dev = {
 				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
 				"maxLogCount":5,
 				"autoRegisterService": true
-			},
-			"agent": {
-				"topologyDir": "/opt/soajs/"
 			},
 			"key": {
 				"algorithm": 'aes256',
@@ -115,12 +113,12 @@ var dev = {
 				"grants": ['password', 'refresh_token'],
 				"debug": false
 			},
-			"ports": {"controller": 4000, "maintenanceInc": 1000, "randomInc": 100},
+			"ports": {"maintenanceInc": 1000},
 			"cookie": {"secret": "this is a secret sentence"},
 			"session": {
 				"name": "soajsID",
 				"secret": "this is antoine hage app server",
-				"cookie": {"path": '/', "httpOnly": true, "secure": false, "domain": "soajs.com", "maxAge": null},
+				"cookie": {"path": '/', "httpOnly": true, "secure": false, "maxAge": null},
 				"resave": false,
 				"saveUninitialized": false
 			}
