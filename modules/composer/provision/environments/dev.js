@@ -94,6 +94,10 @@ var dev = {
 			"esClient2": {
 				"cluster": "es2",
 				"tenantSpecific": false
+			},
+			"company": {
+				"cluster": "cluster1",
+				"tenantSpecific": false
 			}
 		}
 	},
