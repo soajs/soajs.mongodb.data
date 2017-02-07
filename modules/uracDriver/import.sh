@@ -1,11 +1,10 @@
 #!/bin/bash
 
 pushd ./provision
-mongo ./environment.js
-mongo ./oauth.js
 mongo ./product.js
-mongo ./services.js
 mongo ./tenant.js
+mongo ./environment.js
+mongo ./services.js
 popd
 pushd ./urac
 mongo ./urac.js
