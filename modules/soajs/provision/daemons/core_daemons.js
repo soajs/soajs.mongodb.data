@@ -1,6 +1,6 @@
 var core_daemons = [
     {
-        "name": "helloDaemon",
+        "name": "hellodaemon",
         "port": 4200,
         "versions": {
             "1": {
@@ -9,7 +9,7 @@ var core_daemons = [
         }
     },
     {
-        "name": "helloDaemonCron",
+        "name": "hellodaemoncron",
         "port": 4201,
         "versions": {
             "1": {

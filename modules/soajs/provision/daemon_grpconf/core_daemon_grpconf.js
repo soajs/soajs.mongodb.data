@@ -1,7 +1,7 @@
 var core_daemon_grpconf = [
     {
         "daemonConfigGroup": "group1",
-        "daemon": "helloDaemon",
+        "daemon": "hellodaemon",
         "status": 1,
         "interval": 1800000,
         "jobs": {
@@ -14,7 +14,7 @@ var core_daemon_grpconf = [
     },
     {
         "daemonConfigGroup": "group1",
-        "daemon": "helloDaemonCron",
+        "daemon": "hellodaemoncron",
         "status": 1,
         "type": "cron",
         "cronConfig": {
