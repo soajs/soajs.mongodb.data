@@ -18,6 +18,7 @@ var test = {
 			"description": "this is a description for app for test tenant for test product and basic package",
 			"acl": {
 				"urac": {},
+                "oauth": {},
 				"dashboard": {}
 			},
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
