@@ -86,6 +86,8 @@ var dashboard = {
 			},
 			"oauth": {
 				"grants": ['password', 'refresh_token'],
+				"accessTokenLifetime": 7200,
+				"refreshTokenLifetime": 1209600,
 				"debug": false
 			},
 			"ports": {"controller": 4000, "maintenanceInc": 1000, "randomInc": 100},
