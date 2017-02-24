@@ -13,7 +13,15 @@ var testProduct = {
             "acl" : {
                 "urac" : {},
 	            "dashboard": {},
-	            "oauth" : {}
+	            "oauth" : {
+                	"access": false,
+                	"apis":{
+                		"/accessToken/:token":{ "access": true},
+                		"/refreshToken/:token":{ "access": true},
+                		"/tokens/:userId":{ "access": true},
+                		"/authorization/:clientId":{ "access": true}
+	                }
+	            }
             },
             "_TTL" : 86400000 // 24 hours
         }
