@@ -135,7 +135,7 @@ var core_services = [
 		}
 	},
 	{
-		"name": "myTest",
+		"name": "mytest",
 		"group": "exampleGroup",
 		"port": 4099,
 		"requestTimeout": 2,

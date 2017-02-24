@@ -11,7 +11,7 @@ var testProduct = {
 			"name": "basic package",
 			"description": "this is a description for test product basic package",
 			"acl": {
-				"myTest": {},
+				"mytest": {},
 				"urac": {},
 				"oauth": {},
 				"dashboard": {}
@@ -23,7 +23,7 @@ var testProduct = {
 			"name": "example package",
 			"description": "this is a description for test product example03 package",
 			"acl": {
-				"myTest": {},
+				"mytest": {},
 				"urac": {},
 				"example03": {}
 			},
