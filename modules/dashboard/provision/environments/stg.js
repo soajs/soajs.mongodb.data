@@ -1,8 +1,8 @@
 'use strict';
-var dev = {
-	"_id": ObjectId('55128442e603d7e01ab1688c'),
-	"code": "DEV",
-	"locked": true,
+
+var stg = {
+	"_id": ObjectId('58b43059a1c5d32fab2f9ca5'),
+	"code": "STG",
 	"description": "this is the DEV environment",
 	"deployer": {
 		"type": "manual",

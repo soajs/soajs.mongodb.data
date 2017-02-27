@@ -4,7 +4,7 @@ var test = {
 	"_id": ObjectId("10d2cb5fc04ce51e06000001"),
 	"oauth": {
 		"secret": "shhh this is a secret",
-		"redirectUri": "",
+		"redirectURI": "",
 		"grants": ["password", "refresh_token"]
 	},
 	"code": "test",
@@ -29,12 +29,17 @@ var test = {
 						{
 							"expDate": new Date().getTime() + 7 * 24 * 3600 * 1000, // + 7 days
 							"extKey": "aa39b5490c4a4ed0e56d7ec1232a428f771e8bb83cfcee16de14f735d0f5da587d5968ec4f785e38570902fd24e0b522b46cb171872d1ea038e88328e7d973ff47d9392f72b2d49566209eb88eb60aed8534a965cf30072c39565bd8d72f68ac",
+							"dashboardAccess": true,
+							"env": "DASHBOARD",
 							"device": {},
 							"geo": {}
 						}
 					],
 					"config": {
 						"dev": {
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -106,6 +111,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
@@ -135,6 +143,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
@@ -146,4 +157,17 @@ var test = {
 			]
 		}
 	]
-};	
+};
+
+var test2 = {
+	"_id": ObjectId("58b44c8fdd6d6b401c13d8d5"),
+	"oauth": {
+		"secret": "shhh this is a secret",
+		"redirectURI": "",
+		"grants": ["password", "refresh_token"]
+	},
+	"code": "NEWT",
+	"name": "New Test Tenant",
+	"description": "this is a description for another test tenant",
+	"applications": []
+};

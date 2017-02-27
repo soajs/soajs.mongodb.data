@@ -12,7 +12,7 @@ var admin = {
 	"status": "active",
 	"profile": {},
 	"groups": ['administrator'],
-	"tenant":{
+	"tenant": {
 		"id": "10d2cb5fc04ce51e06000001",
 		"code": "test"
 	}

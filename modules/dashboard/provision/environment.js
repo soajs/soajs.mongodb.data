@@ -9,7 +9,9 @@ for (var i = 0; i < files.length; i++) {
 provDb.environment.drop();
 
 var records = [];
+records.push(dashboard);
 records.push(dev);
+records.push(stg);
 
 provDb.environment.insert(records);
 

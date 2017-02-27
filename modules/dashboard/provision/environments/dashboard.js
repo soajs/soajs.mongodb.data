@@ -1,9 +1,9 @@
 'use strict';
-var dev = {
-	"_id": ObjectId('55128442e603d7e01ab1688c'),
-	"code": "DEV",
+var dashboard = {
+	"_id": ObjectId('58b4026e511807397f8228f4'),
+	"code": "DASHBOARD",
 	"locked": true,
-	"description": "this is the DEV environment",
+	"description": "this is the DASHBOARD environment",
 	"deployer": {
 		"type": "manual",
 		"selected": "container.docker.local",
