@@ -34,7 +34,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev":{	
+						"dev": {
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -74,9 +74,9 @@ var test = {
 								}
 							},
 							"dashboard": {
-								"ownerPackage" : "DSBRD_OWNER",
+								"ownerPackage": "DSBRD_OWNER",
 								"defaultClientPackage": "DSBRD_CLIENT",
-								"clientspackage" : {}
+								"clientspackage": {}
 							}
 						}
 					}
@@ -105,14 +105,13 @@ var test = {
 						}
 					],
 					"config": {
-						"dev":{
+						"dev": {
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
 								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
 							}
 						}
-						
 					}
 				}
 			]
@@ -135,13 +134,13 @@ var test = {
 						}
 					],
 					"config": {
-						"dev":{
+						"dev": {
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher							
 								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
 							}
-						}						
+						}
 					}
 				}
 			]

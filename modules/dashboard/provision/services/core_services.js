@@ -310,6 +310,53 @@ var core_services = [
 		}
 	},
 	{
+		"_id": ObjectId('58b3fcc864e4cd8063e88d7e'),
+		"name": "oauth",
+		"port": 4002,
+		"requestTimeout": 30,
+		"requestTimeoutRenewal": 5,
+		"versions": {
+			"1": {
+				"extKeyRequired": true,
+				"apis": [
+					{
+						"l": "Get the authorization value",
+						"v": "/authorization",
+						"m": "get"
+					},
+					{
+						"l": "Create Token",
+						"v": "/token",
+						"m": "post"
+					},
+					{
+						"l": "Delete Access Token",
+						"v": "/accessToken/:token",
+						"m": "delete"
+					},
+					{
+						"l": "Delete Refresh Token",
+						"v": "/refreshToken/:token",
+						"m": "delete"
+					},
+					{
+						"l": "Delete all Tokens for this User",
+						"v": "/tokens/user/:userId",
+						"m": "delete"
+					},
+					{
+						"l": "Delete all Tokens for this Client",
+						"v": "/tokens/tenant/:clientId",
+						"m": "delete"
+					}
+				],
+				"awareness": true
+			}
+		},
+		"group": "SOAJS Core Services",
+		"swagger": false
+	},
+	{
 		"name": "urac",
 		"port": 4001,
 		"requestTimeout": 30,
@@ -343,6 +390,13 @@ var core_hosts = [
 	{
 		"env": "dev",
 		"name": "dashboard",
+		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
+		"version": 1
+	},
+	{
+		"env": "dev",
+		"name": "oauth",
 		"ip": "127.0.0.1",
 		"hostname": hostname().toLowerCase(),
 		"version": 1

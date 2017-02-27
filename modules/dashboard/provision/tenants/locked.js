@@ -1,8 +1,12 @@
 'use strict';
 var locked = {
 	"_id": ObjectId("551286bce603d7e01ab1688e"),
-	"oauth": {},
-	"locked" : true,
+	"oauth": {
+		"secret": "shhh this is a secret",
+		"redirectUri": "",
+		"grants": ["password", "refresh_token"]
+	},
+	"locked": true,
 	"code": "DBTN",
 	"name": "Dashboard Tenant",
 	"description": "This is the main dashboard tenant",
@@ -26,7 +30,10 @@ var locked = {
 						}
 					],
 					"config": {
-						"dev":{
+						"dev": {
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"mail": {},
 							"urac": {}
 						}
