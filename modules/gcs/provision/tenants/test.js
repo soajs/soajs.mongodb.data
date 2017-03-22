@@ -30,6 +30,9 @@ var test = {
 					],
 					"config": {
 						"dashboard": {
+							"oauth":{
+								"loginMode":"urac"
+							},
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -68,6 +71,11 @@ var test = {
 									}
 								}
 							},
+						},
+						"dev":{
+							"oauth":{
+								"loginMode":"urac"
+							}
 						}
 					}
 				}

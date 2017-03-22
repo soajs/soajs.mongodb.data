@@ -40,6 +40,13 @@ provDb.hosts.insert({
 	"hostname": "urac.local"
 });
 
+provDb.hosts.insert({
+	"env": "dev",
+	"name": "oauth",
+	"ip": "127.0.0.1",
+	"hostname": "oauth.local"
+});
+
 /* Indexes for services */
 provDb.services.ensureIndex({name: 1}, {unique: true});
 provDb.services.ensureIndex({'port': 1}, {unique: true});
