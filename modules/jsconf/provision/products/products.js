@@ -13,7 +13,7 @@ var products = [
 					"dev": {
 						"jsconf3": {
 							"apis": {
-								"/hello": {}
+								"/hello": {"access":true}
 							},
 							"access": false,
 							"apisPermission": "restricted"
