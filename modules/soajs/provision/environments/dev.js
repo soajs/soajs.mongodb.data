@@ -85,7 +85,7 @@ var dev = {
 		"config": {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
-				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
+				"autoRelaodRegistry": 1000 * 10, // 5 minutes
 				"maxLogCount":5,
 				"autoRegisterService": true
 			},
@@ -97,10 +97,10 @@ var dev = {
 				"password": 'soajs key lal massa'
 			},
 			"logger": { //ATTENTION: this is not all the properties for logger
-                "src": true,
-                "level": "debug",
+                // "src": false,
+                "level": "fatal",
                 "formatter": {
-                    outputMode: 'long'
+                    outputMode: 'short'
                 }
 			},
 			"cors": {
