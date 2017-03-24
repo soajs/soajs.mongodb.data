@@ -79,13 +79,13 @@ var dev = {
 		"controller": {
 			"maxPoolSize": 100,
 			"authorization": true,
-			"requestTimeout": 30,
+			"requestTimeout": 6,
 			"requestTimeoutRenewal": 0
 		},
 		"config": {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
-				"autoRelaodRegistry": 1000 * 10, // 5 minutes
+				"autoRelaodRegistry": 1000 * 10, // 10 seconds
 				"maxLogCount":5,
 				"autoRegisterService": true
 			},
