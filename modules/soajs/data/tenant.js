@@ -33,7 +33,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -101,7 +101,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}
@@ -123,7 +123,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}
@@ -148,7 +148,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}
@@ -176,7 +176,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}

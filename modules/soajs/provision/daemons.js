@@ -1,4 +1,5 @@
 var provDb = db.getSiblingDB('core_provision');
+provDb.dropDatabase();
 
 var files = listFiles('./daemons');
 for(var i = 0; i < files.length; i++) {

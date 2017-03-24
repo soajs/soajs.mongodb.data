@@ -1,9 +1,9 @@
 'use strict';
-var dev = {
+var dashboard = {
 	"_id": ObjectId('55128442e603d7e01ab1688c'),
-	"code": "DEV",
+	"code": "DASHBOARD",
 	"locked": true,
-	"description": "this is the DEV environment",
+	"description": "this is the DASHBOARD environment",
 	"ips": [
 		"127.0.0.1"
 	],

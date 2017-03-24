@@ -34,7 +34,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -122,7 +122,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"oauth":{
 								"loginMode": "urac"
 							},
@@ -176,7 +176,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"oauth":{
 								"loginMode": "urac"
 							},
@@ -204,7 +204,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"oauth":{
 								"loginMode": "urac"
 							},
@@ -243,7 +243,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"oauth":{
 								"loginMode": "urac"
 							},

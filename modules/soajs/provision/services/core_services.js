@@ -63,37 +63,37 @@ var core_services = [
 
 var core_hosts = [
     {
-        "env": "dev",
+        "env": "dashboard",
         "name": "oauth",
         "ip": "127.0.0.1",
         "version": 1
     },
     {
-        "env": "dev",
+        "env": "dashboard",
         "name": "urac",
         "ip": "127.0.0.1",
         "version": 1
     },
 	{
-		"env": "dev",
+		"env": "dashboard",
 		"name": "example01",
 		"ip": "127.0.0.1",
         "version": 1
 	},
     {
-        "env": "dev",
+        "env": "dashboard",
         "name": "example02",
         "ip": "127.0.0.1",
         "version": 1
     },
 	{
-		"env": "dev",
+		"env": "dashboard",
 		"name": "example03",
 		"ip": "127.0.0.1",
         "version": 1
 	},
 	{
-		"env": "dev",
+		"env": "dashboard",
 		"name": "example06",
 		"ip": "127.0.0.1",
 		"version": 1
