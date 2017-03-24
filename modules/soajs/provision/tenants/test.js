@@ -86,9 +86,18 @@ var test = {
 			"acl": {
 				"urac": {},
 				"example03": {
+					"apisPermission": "restricted",
+					"apisRegExp":{
+						"/*":{
+							"access": false
+						}
+					},
 					"access": true
 				},
 				"example06": {
+					"apis":{
+						"testRoute": {}
+					},
 					"access": false
 				}
 			},
@@ -114,6 +123,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {},
 							"example06": {
 								"SOAJS": {
@@ -165,6 +177,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {}
 						}
 					}
@@ -190,6 +205,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {}
 						}
 					}
@@ -226,6 +244,9 @@ var test = {
 					],
 					"config": {
 						"dev": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {}
 						}
 					}
