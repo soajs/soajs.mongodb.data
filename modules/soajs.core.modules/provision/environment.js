@@ -1,5 +1,5 @@
 var provDb = db.getSiblingDB('core_provision');
-//provDb.dropDatabase();
+provDb.dropDatabase();
 
 var files = listFiles('./environments');
 for (var i = 0; i < files.length; i++) {
