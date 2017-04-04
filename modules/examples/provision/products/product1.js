@@ -10,7 +10,9 @@ var product1 = {
 			"description": "This is a test package. it offers the urac",
 			"acl": {
 				"urac": {},
-				"oauth": {},
+				"oauth": {
+					access: false
+				},
 				"example04": {}
 			},
 			"_TTL": 86400000
