@@ -97,5 +97,23 @@ var core_hosts = [
 		"name": "example06",
 		"ip": "127.0.0.1",
 		"version": 1
-	}
+	},
+    {
+        "env": "dashboard",
+        "name": "helloworld",
+        "ip": "127.0.0.1",
+        "version": 1
+    },
+    {
+        "env": "dashboard",
+        "name": "helloDaemon",
+        "ip": "127.0.0.1",
+        "version": 1
+    },
+    {
+        "env": "dashboard",
+        "name": "hellodaemoncron",
+        "ip": "127.0.0.1",
+        "version": 1
+    }
 ];
