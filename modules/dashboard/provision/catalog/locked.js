@@ -1,6 +1,6 @@
 "use strict";
 
-var catalog = {
+var locked = {
     "_id": ObjectId('58b4026e511807397f8228f5'),
     "name": "lockedCatalog",
     "type": "service",

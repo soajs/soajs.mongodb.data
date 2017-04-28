@@ -9,7 +9,10 @@ for (var i = 0; i < files.length; i++) {
 provDb.catalogs.drop();
 
 var records = [];
-records.push(catalog);
+records.push(service);
+records.push(daemon);
+records.push(nginx);
+records.push(locked);
 provDb.catalogs.insert(records);
 
 /* Indexes for products */
