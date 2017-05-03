@@ -18,8 +18,9 @@ var test = {
 			"description": "this is a description for app for test tenant for test product and basic package",
 			"acl": {
 				"urac": {},
+				"example02":{"access":true},
                 "oauth": {},
-				"dashboard": {}
+				"dashboard": {"access":false}
 			},
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
 			"keys": [
@@ -85,6 +86,7 @@ var test = {
 			"description": "this is a description for app for test tenant for test product and basic package, and with example03 in acl",
 			"acl": {
 				"urac": {},
+                "oauth": {},
 				"example03": {
 					"apisPermission": "restricted",
 					"apisRegExp":{
