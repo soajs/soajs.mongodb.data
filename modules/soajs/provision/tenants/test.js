@@ -36,6 +36,9 @@ var test = {
 					],
 					"config": {
 						"dashboard": {
+                            "oauth":{
+                                "loginMode": "oauth"
+                            },
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -224,6 +227,7 @@ var test = {
 			"_TTL": 86400000, // 24 hours
 			"acl":{
 				"urac": {},
+				"oauth":{},
 				"example03":{
 					"access": true,
 					"apis":{
