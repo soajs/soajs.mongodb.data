@@ -25,7 +25,8 @@ var core_services = [
         "versions": {
             "1": {
                 "apis": [],
-                "extKeyRequired": false
+                "extKeyRequired": false,
+                "oauth": false
             }
         }
 	},
