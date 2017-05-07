@@ -32,10 +32,12 @@ var tenants = [
 						],
 						"config": {
 							"dev": {
-								"style": "imfv",
-								"obj": {
-									"name": "mike",
-									"email": "team@soajs.org"
+								"commonFields":{
+									"style": "imfv",
+									"obj": {
+										"name": "mike",
+										"email": "team@soajs.org"
+									}
 								}
 							}
 						}
@@ -77,87 +79,91 @@ var tenants = [
 						],
 						"config": {
 							"dashboard": {
-								"mail": {
-									"from": "me@localhost.com",
-									"transport": {
-										"type": "sendmail",
-										"options": {}
-									}
-								},
-								"urac": {
-									"hashIterations": 1024,
-									"seedLength": 32,
-									"link": {
-										"addUser": "http://dashboard.soajs.org/#/setNewPassword",
-										"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
-										"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
-										"join": "http://dashboard.soajs.org/#/join/validate"
-									},
-									"tokenExpiryTTL": 172800000,
-									"validateJoin": true,
+								"commonFields":{
 									"mail": {
-										"join": {
-											"subject": "Welcome to SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+										"from": "me@localhost.com",
+										"transport": {
+											"type": "sendmail",
+											"options": {}
+										}
+									},
+									"urac": {
+										"hashIterations": 1024,
+										"seedLength": 32,
+										"link": {
+											"addUser": "http://dashboard.soajs.org/#/setNewPassword",
+											"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
+											"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
+											"join": "http://dashboard.soajs.org/#/join/validate"
 										},
-										"forgotPassword": {
-											"subject": "Reset Your Password at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
-										},
-										"addUser": {
-											"subject": "Account Created at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
-										},
-										"changeUserStatus": {
-											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
-										},
-										"changeEmail": {
-											"subject": "Change Account Email at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+										"tokenExpiryTTL": 172800000,
+										"validateJoin": true,
+										"mail": {
+											"join": {
+												"subject": "Welcome to SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+											},
+											"forgotPassword": {
+												"subject": "Reset Your Password at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
+											},
+											"addUser": {
+												"subject": "Account Created at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
+											},
+											"changeUserStatus": {
+												"subject": "Account Status changed at SOAJS",
+												"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											},
+											"changeEmail": {
+												"subject": "Change Account Email at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+											}
 										}
 									}
 								}
 							},
 							"dev": {
-								"mail": {
-									"from": "me@localhost.com",
-									"transport": {
-										"type": "sendmail",
-										"options": {}
-									}
-								},
-								"urac": {
-									"hashIterations": 1024,
-									"seedLength": 32,
-									"link": {
-										"addUser": "http://dashboard.soajs.org/#/setNewPassword",
-										"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
-										"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
-										"join": "http://dashboard.soajs.org/#/join/validate"
-									},
-									"tokenExpiryTTL": 172800000,
-									"validateJoin": true,
+								"commonFields":{
 									"mail": {
-										"join": {
-											"subject": "Welcome to SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+										"from": "me@localhost.com",
+										"transport": {
+											"type": "sendmail",
+											"options": {}
+										}
+									},
+									"urac": {
+										"hashIterations": 1024,
+										"seedLength": 32,
+										"link": {
+											"addUser": "http://dashboard.soajs.org/#/setNewPassword",
+											"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
+											"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
+											"join": "http://dashboard.soajs.org/#/join/validate"
 										},
-										"forgotPassword": {
-											"subject": "Reset Your Password at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
-										},
-										"addUser": {
-											"subject": "Account Created at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
-										},
-										"changeUserStatus": {
-											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
-										},
-										"changeEmail": {
-											"subject": "Change Account Email at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+										"tokenExpiryTTL": 172800000,
+										"validateJoin": true,
+										"mail": {
+											"join": {
+												"subject": "Welcome to SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+											},
+											"forgotPassword": {
+												"subject": "Reset Your Password at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
+											},
+											"addUser": {
+												"subject": "Account Created at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
+											},
+											"changeUserStatus": {
+												"subject": "Account Status changed at SOAJS",
+												"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											},
+											"changeEmail": {
+												"subject": "Change Account Email at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+											}
 										}
 									}
 								}
@@ -190,87 +196,91 @@ var tenants = [
 						],
 						"config": {
 							"dashboard": {
-								"mail": {
-									"from": "me@localhost.com",
-									"transport": {
-										"type": "sendmail",
-										"options": {}
-									}
-								},
-								"urac": {
-									"hashIterations": 1024,
-									"seedLength": 32,
-									"link": {
-										"addUser": "http://dashboard.soajs.org/#/setNewPassword",
-										"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
-										"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
-										"join": "http://dashboard.soajs.org/#/join/validate"
-									},
-									"tokenExpiryTTL": 172800000,
-									"validateJoin": true,
+								"commonFields":{
 									"mail": {
-										"join": {
-											"subject": "Welcome to SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+										"from": "me@localhost.com",
+										"transport": {
+											"type": "sendmail",
+											"options": {}
+										}
+									},
+									"urac": {
+										"hashIterations": 1024,
+										"seedLength": 32,
+										"link": {
+											"addUser": "http://dashboard.soajs.org/#/setNewPassword",
+											"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
+											"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
+											"join": "http://dashboard.soajs.org/#/join/validate"
 										},
-										"forgotPassword": {
-											"subject": "Reset Your Password at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
-										},
-										"addUser": {
-											"subject": "Account Created at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
-										},
-										"changeUserStatus": {
-											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
-										},
-										"changeEmail": {
-											"subject": "Change Account Email at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+										"tokenExpiryTTL": 172800000,
+										"validateJoin": true,
+										"mail": {
+											"join": {
+												"subject": "Welcome to SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+											},
+											"forgotPassword": {
+												"subject": "Reset Your Password at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
+											},
+											"addUser": {
+												"subject": "Account Created at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
+											},
+											"changeUserStatus": {
+												"subject": "Account Status changed at SOAJS",
+												"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											},
+											"changeEmail": {
+												"subject": "Change Account Email at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+											}
 										}
 									}
 								}
 							},
 							"dev": {
-								"mail": {
-									"from": "me@localhost.com",
-									"transport": {
-										"type": "sendmail",
-										"options": {}
-									}
-								},
-								"urac": {
-									"hashIterations": 1024,
-									"seedLength": 32,
-									"link": {
-										"addUser": "http://dashboard.soajs.org/#/setNewPassword",
-										"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
-										"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
-										"join": "http://dashboard.soajs.org/#/join/validate"
-									},
-									"tokenExpiryTTL": 172800000,
-									"validateJoin": true,
+								"commonFields":{
 									"mail": {
-										"join": {
-											"subject": "Welcome to SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+										"from": "me@localhost.com",
+										"transport": {
+											"type": "sendmail",
+											"options": {}
+										}
+									},
+									"urac": {
+										"hashIterations": 1024,
+										"seedLength": 32,
+										"link": {
+											"addUser": "http://dashboard.soajs.org/#/setNewPassword",
+											"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
+											"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
+											"join": "http://dashboard.soajs.org/#/join/validate"
 										},
-										"forgotPassword": {
-											"subject": "Reset Your Password at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
-										},
-										"addUser": {
-											"subject": "Account Created at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
-										},
-										"changeUserStatus": {
-											"subject": "Account Status changed at SOAJS",
-											"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
-										},
-										"changeEmail": {
-											"subject": "Change Account Email at SOAJS",
-											"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+										"tokenExpiryTTL": 172800000,
+										"validateJoin": true,
+										"mail": {
+											"join": {
+												"subject": "Welcome to SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/join.tmpl"
+											},
+											"forgotPassword": {
+												"subject": "Reset Your Password at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/forgotPassword.tmpl"
+											},
+											"addUser": {
+												"subject": "Account Created at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/addUser.tmpl"
+											},
+											"changeUserStatus": {
+												"subject": "Account Status changed at SOAJS",
+												"content": "<p>Dear <b>{{ username }}</b>, <br />The administrator update your account status to <b>{{ status }}</b> on {{ts}}.<br /><br />Regards,<br/>SOAJS Team.</p>"
+											},
+											"changeEmail": {
+												"subject": "Change Account Email at SOAJS",
+												"path": "/opt/soajs/node_modules/soajs.urac/mail/urac/changeEmail.tmpl"
+											}
 										}
 									}
 								}
@@ -321,7 +331,9 @@ var tenants = [
 						],
 						"config": {
 							"dev": {
-								"style": "simple"
+								"commonFields":{
+									"style": "simple"
+								}
 							}
 						}
 					}
@@ -370,9 +382,11 @@ var tenants = [
 						],
 						"config": {
 							"dev": {
-								"style": "advanced",
-								"obj": {
-									"name": "mike"
+								"commonFields":{
+									"style": "advanced",
+									"obj": {
+										"name": "mike"
+									}
 								}
 							}
 						}

@@ -7,6 +7,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": false,
+	            "oauth": false,
                 "apis": [
                     {
                         "l": "Test Get",
@@ -40,6 +41,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": false,
+	            "oauth": true,
                 "apis": [
                     {
                         'l': 'Build Name',
@@ -57,6 +59,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": true,
+	            "oauth": true,
                 "apis": [
                     {
                         "l": "Test Get Api",
@@ -78,6 +81,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": true,
+	            "oauth": false,
                 "apis": [
                     {
                         'l': 'Build Name',
@@ -103,6 +107,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": false,
+	            oauth: false,
                 "apis": [
                     {
                         'l': 'hello world',

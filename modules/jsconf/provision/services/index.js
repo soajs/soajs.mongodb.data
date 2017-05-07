@@ -20,7 +20,7 @@ var services = [
 			"repo": "soajs.oauth"
 		},
 		"versions": {
-			"1": {
+			"2": {
 				"extKeyRequired": true,
 				"apis": []
 			}
@@ -38,7 +38,7 @@ var services = [
 			"main": "services/s1/"
 		},
 		"versions": {
-			"1": {
+			"2": {
 				"extKeyRequired": false,
 				"apis": []
 			}
@@ -56,7 +56,7 @@ var services = [
 			"main": "services/s2/"
 		},
 		"versions": {
-			"1": {
+			"2": {
 				"extKeyRequired": true,
 				"apis": []
 			}
@@ -74,7 +74,7 @@ var services = [
 			"main": "services/s3/"
 		},
 		"versions": {
-			"1": {
+			"2": {
 				"extKeyRequired": true,
 				"apis": []
 			}
@@ -92,7 +92,7 @@ var services = [
 			"main": "services/s4/"
 		},
 		"versions": {
-			"1": {
+			"2": {
 				"extKeyRequired": true,
 				"apis": []
 			}

@@ -91,6 +91,9 @@ var gc_pages = {
 			"requestTimeoutRenewal": 5,
 			"awareness": false,
 			"extKeyRequired": true,
+			"uracDriver" : true, 
+			"urac_Profile" : true, 
+			"urac" : true,
 			"maxFileUpload": "4096"
 		},
 		"options": {

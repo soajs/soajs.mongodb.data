@@ -22,6 +22,10 @@ var core_services = [
 		"versions": {
 			"1": {
 				"extKeyRequired": true,
+				"urac_Profile" : true,
+				"urac_ACL" : true,
+				"provision_ACL" : true,
+				"urac" : true,
 				"apis": [
 					{
 						'l': "List Environments",

@@ -35,22 +35,24 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"tenantCodes": {
-								"temp": {
-									"mail": {
-										"from": 'me@localhost.com',
-										"transport": {
-											"type": "sendmail",
-											"options": {}
+							"commonFields":{
+								"tenantCodes": {
+									"temp": {
+										"mail": {
+											"from": 'me@localhost.com',
+											"transport": {
+												"type": "sendmail",
+												"options": {}
+											}
 										}
 									}
-								}
-							},
-							"mail": {
-								"from": 'me@localhost.com',
-								"transport": {
-									"type": "sendmail",
-									"options": {}
+								},
+								"mail": {
+									"from": 'me@localhost.com',
+									"transport": {
+										"type": "sendmail",
+										"options": {}
+									}
 								}
 							},
 							"urac": {
