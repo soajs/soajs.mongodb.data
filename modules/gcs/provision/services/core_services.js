@@ -67,5 +67,17 @@ var core_services = [
 				"apis": []
 			}
 		}
+	},
+	{
+		"name": "oauth",
+		"port": 4002,
+		"requestTimeout": 30,
+		"requestTimeoutRenewal": 5,
+		"versions": {
+			"1": {
+				"extKeyRequired": true,
+				"apis": []
+			}
+		}
 	}
 ];

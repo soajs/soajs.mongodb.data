@@ -98,7 +98,7 @@ var gc_posts = {
 			"security": false,
 			"session": true,
 			"acl": false,
-			"oauth": false
+			"oauth": true
 		}
 	},
 	"soajsService": {

@@ -15,8 +15,13 @@ var user3 = {
 	"config": {
 		"packages": {
 			"PROD1_PCK1": {  
-				"acl": { 
-					"urac": {},
+				"acl": {
+					"oauth": {
+						access: false
+					},
+					"urac": {
+						access: false
+					},
 					"example03": {},
 					"example04": {}
 				}
@@ -32,7 +37,8 @@ var user3 = {
 						"tenantName": "Tenant name specific to user three"
 					}
 				},
-				"acl": { 
+				"acl": {
+					"oauth": {},
 					"urac": {},
 					"example04": {},
 					"example03": {

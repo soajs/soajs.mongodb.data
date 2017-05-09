@@ -9,7 +9,7 @@ for (var i = 0; i < files.length; i++) {
 provDb.environment.drop();
 
 var records = [];
-records.push(dev);
+records.push(dashboard);
 provDb.environment.insert(records);
 
 /* Indexes for products */

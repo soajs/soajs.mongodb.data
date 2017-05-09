@@ -98,7 +98,7 @@ var gc_pages = {
 			"security": true,
 			"session": true,
 			"acl": true,
-			"oauth": false
+			"oauth": true
 		}
 	},
 	"soajsService": {

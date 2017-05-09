@@ -17,8 +17,10 @@ var test = {
 			"appId": "30d2cb5fc04ce51e06000001",
 			"description": "this is a description for app for test tenant for test product and basic package",
 			"acl": {
-				"urac": {},
-				"dashboard": {}
+                "urac": {},
+                "example02":{"access":true},
+                "oauth": {},
+                "dashboard": {"access":false}
 			},
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
 			"keys": [
@@ -33,7 +35,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -84,6 +86,7 @@ var test = {
 			"description": "this is a description for app for test tenant for test product and basic package, and with example03 in acl",
 			"acl": {
 				"urac": {},
+                "oauth": {},
 				"example03": {
 					"access": true
 				}
@@ -101,7 +104,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}
@@ -123,7 +126,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}
@@ -148,7 +151,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}
@@ -176,7 +179,7 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
 							"urac": {}
 						}
 					}

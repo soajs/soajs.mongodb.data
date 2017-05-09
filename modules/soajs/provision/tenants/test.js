@@ -18,8 +18,9 @@ var test = {
 			"description": "this is a description for app for test tenant for test product and basic package",
 			"acl": {
 				"urac": {},
+				"example02":{"access":true},
                 "oauth": {},
-				"dashboard": {}
+				"dashboard": {"access":false}
 			},
 			"_TTL": 7 * 24 * 3600 * 1000, // 7 days hours
 			"keys": [
@@ -34,7 +35,10 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
+                            "oauth":{
+                                "loginMode": "oauth"
+                            },
 							"mail": {
 								"from": 'me@localhost.com',
 								"transport": {
@@ -85,10 +89,20 @@ var test = {
 			"description": "this is a description for app for test tenant for test product and basic package, and with example03 in acl",
 			"acl": {
 				"urac": {},
+                "oauth": {},
 				"example03": {
+					"apisPermission": "restricted",
+					"apisRegExp":{
+						"/*":{
+							"access": false
+						}
+					},
 					"access": true
 				},
 				"example06": {
+					"apis":{
+						"testRoute": {}
+					},
 					"access": false
 				}
 			},
@@ -113,7 +127,10 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {},
 							"example06": {
 								"SOAJS": {
@@ -164,7 +181,10 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {}
 						}
 					}
@@ -189,7 +209,10 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {}
 						}
 					}
@@ -204,6 +227,7 @@ var test = {
 			"_TTL": 86400000, // 24 hours
 			"acl":{
 				"urac": {},
+				"oauth":{},
 				"example03":{
 					"access": true,
 					"apis":{
@@ -225,7 +249,10 @@ var test = {
 						}
 					],
 					"config": {
-						"dev": {
+						"dashboard": {
+							"oauth":{
+								"loginMode": "urac"
+							},
 							"urac": {}
 						}
 					}

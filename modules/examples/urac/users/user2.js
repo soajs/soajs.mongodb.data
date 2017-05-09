@@ -14,7 +14,12 @@ var user2 = {
 		"packages": {
 			"PROD1_PCK1": {
 				"acl": {
-					"urac": {},
+					"oauth": {
+						access: false
+					},
+					"urac": {
+						access: false
+					},
 					"example04": {},
 					"example03": {}
 				}

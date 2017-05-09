@@ -8,4 +8,5 @@ mongo ./oauth.js
 mongo ./product.js
 mongo ./services.js
 mongo ./tenant.js
+mongo ./urac.js
 popd

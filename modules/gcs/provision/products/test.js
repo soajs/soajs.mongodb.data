@@ -12,7 +12,10 @@ var testProduct = {
 			"description": "this is a description for test product basic package",
 			"acl": {
 				"urac": {},
-				"gc_pages": {}
+				"oauth": {},
+				"gc_pages": {
+					"access": true
+				}
 			},
 			"_TTL": 86400000 // 24 hours
 		}

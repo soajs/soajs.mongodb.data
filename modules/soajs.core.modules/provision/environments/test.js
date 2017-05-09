@@ -1,9 +1,8 @@
 'use strict';
-var dashboard = {
-	"_id": ObjectId('55128442e603d7e01ab1688c'),
-	"code": "DASHBOARD",
+var test = {
+	"code": "TEST",
 	"locked": true,
-	"description": "this is the DASHBOARD environment",
+	"description": "this is the DEV environment",
 	"ips": [
 		"127.0.0.1"
 	],
@@ -79,13 +78,13 @@ var dashboard = {
 		"controller": {
 			"maxPoolSize": 100,
 			"authorization": true,
-			"requestTimeout": 6,
+			"requestTimeout": 30,
 			"requestTimeoutRenewal": 0
 		},
 		"config": {
 			"awareness": {
 				"healthCheckInterval": 1000 * 0.5, // 5 seconds
-				"autoRelaodRegistry": 1000 * 10, // 10 seconds
+				"autoRelaodRegistry": 1000 * 60 * 5, // 5 minutes
 				"maxLogCount":5,
 				"autoRegisterService": true
 			},
@@ -97,10 +96,10 @@ var dashboard = {
 				"password": 'soajs key lal massa'
 			},
 			"logger": { //ATTENTION: this is not all the properties for logger
-                // "src": false,
-                "level": "fatal",
+                "src": true,
+                "level": "debug",
                 "formatter": {
-                    outputMode: 'short'
+                    outputMode: 'long'
                 }
 			},
 			"cors": {

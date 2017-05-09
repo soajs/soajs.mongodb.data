@@ -32,6 +32,9 @@ var tenant1 = {
 					],
 					"config": {
 						"dev":{
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
@@ -72,6 +75,9 @@ var tenant1 = {
 					],
 					"config": {
 						"dev":{
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
@@ -108,6 +114,9 @@ var tenant1 = {
 					],
 					"config": {
 						"dev":{
+							"oauth": {
+								"loginMode": 'urac'
+							},
 							"urac": {
 								"hashIterations": 1024, //used by hasher
 								"seedLength": 32, //used by hasher
