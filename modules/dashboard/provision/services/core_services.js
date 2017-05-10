@@ -6,7 +6,7 @@ var core_services = [
 			"provider": "github",
 			"owner": "soajs",
 			"repo": "soajs.controller",
-			"cmd": ["ls"]
+			"cmd": [""]
 		}
 	},
 	{

@@ -3,7 +3,7 @@
 var locked = {
     "_id": ObjectId('58b4026e511807397f8228f5'),
     "name": "lockedCatalog",
-    "type": "service",
+    "type": "soajs",
     "locked": "true",
     "description": "This is a locked catalog for testing purposes.",
     "recipe": {
@@ -18,6 +18,11 @@ var locked = {
                 "isPublished": "true",
                 "target": "80"
             },
-        }
+        },
+	    "buildOptions":{
+		    "settings": {},
+		    "env": {},
+		    "cmd": {}
+	    }
     }
 };
