@@ -12,5 +12,6 @@ mongo ./oauth_urac.js
 mongo ./urac.js
 mongo ./gitAccounts.js
 mongo ./staticContent.js
+mongo ./analytics.js
 mongo ./catalog.js
 popd
