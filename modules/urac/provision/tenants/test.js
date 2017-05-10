@@ -54,6 +54,17 @@ var test = {
 								}
 							},
 							"urac": {
+								"openam": {
+									"attributesURL": "https://sso.dev.ypg.com/openam/identity/json/attributes",
+									"attributesMap": [
+										{"field": 'sAMAccountName', "mapTo": 'id'},
+										{"field": 'sAMAccountName', "mapTo": 'username'},
+										{"field": 'mail', "mapTo": 'email'},
+										{"field": 'givenname', "mapTo": 'firstName'},
+										{"field": 'sn', "mapTo": 'lastName'}
+									],
+									"timeout": 5000
+								},
 								"passportLogin": {
 									"twitter": {
 										"clientID": "qywH8YMduIsKA2RRlUkS50kCZ",
