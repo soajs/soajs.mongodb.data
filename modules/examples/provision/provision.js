@@ -1,5 +1,5 @@
 var provDb = db.getSiblingDB('core_provision');
-//provDb.dropDatabase();
+provDb.dropDatabase();
 
 /* Tenants */
 var files = listFiles('./tenants');

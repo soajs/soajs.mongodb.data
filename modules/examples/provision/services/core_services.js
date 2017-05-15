@@ -125,6 +125,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": true,
+	            "oauth": true,
                 "apis": [
                     {
                         "l": "Create Token",
@@ -146,6 +147,7 @@ var core_services = [
         "versions": {
             "1": {
                 "extKeyRequired": true,
+	            "oauth": true,
                 "apis": []
             }
         }
