@@ -30,78 +30,80 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"tenantCodes": {},
-							"model": "mongo",
-							"mail": {
-								"from": 'me@localhost.com',
-								"transport": {
-									"type": "sendmail",
-									"options": {}
-								}
-							},
-							"urac": {
-								"passportLogin": {
-									"twitter": {
-										"clientID": "qywH8YMduIsKA2RRlUkS50kCZ",
-										"clientSecret": "aodnXVCBijQcS8sJrcLM3ULgCl9VEoqqwu00XgamRUv5qm8bF1",
-										"callbackURL": "http://local-widget.com/urac/login/success",
-										userProfileURL: "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
-									},
-									"facebook": {
-										clientID: '331502413866510',
-										clientSecret: '1a07a7eb9c9884dc5d148106ede830b2',
-										callbackURL: "http://local-widget.com/urac/login/success?mode=facebook"
-									},
-									"google": {
-										clientID: '393278808961-7qahk8kadr2jhbo05o84pbp5tc774a1l.apps.googleusercontent.com',
-										clientSecret: 'sdSpS8FLeUvc0UBs_z8m4f89',
-										callbackURL: "http://local-widget.com/urac/login/success"
-									},
-									"github": {
-										clientID: '79729863675e2513ae44',
-										clientSecret: '3f37cea1cff3e2ead1a11d96f9961e27293739e4',
-										callbackURL: "http://local-widget.com/urac/login/success?mode=github"
+							"commonFields" : {
+								"tenantCodes": {},
+								"model": "mongo",
+								"mail": {
+									"from": 'me@localhost.com',
+									"transport": {
+										"type": "sendmail",
+										"options": {}
 									}
 								},
-								"ldapServer": {
-									host: 'ldap://127.0.0.1',
-									port: 10389,
-									baseDN: 'ou=users,ou=system',
-									adminUser: 'uid=admin, ou=system',
-									adminPassword: 'secret'
-								},
-								"hashIterations": 1024, //used by hasher
-								"seedLength": 32, //used by hasher
-								// "optionalAlgorithm": 'md5',
-								"link": {
-									"addUser": "http://dashboard.soajs.org/#/setNewPassword",
-									"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
-									"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
-									"join": "http://dashboard.soajs.org/#/join/validate"
-								},
-								"tokenExpiryTTL": 2 * 24 * 3600 * 1000,// token expiry limit in seconds
-								"validateJoin": true, //true if registration needs validation
-								"mail": { //urac mail options
-									"join": {
-										"subject": 'Welcome to SOAJS',
-										"path": "./mail/urac/join.tmpl"
+								"urac": {
+									"passportLogin": {
+										"twitter": {
+											"clientID": "qywH8YMduIsKA2RRlUkS50kCZ",
+											"clientSecret": "aodnXVCBijQcS8sJrcLM3ULgCl9VEoqqwu00XgamRUv5qm8bF1",
+											"callbackURL": "http://local-widget.com/urac/login/success",
+											userProfileURL: "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
+										},
+										"facebook": {
+											clientID: '331502413866510',
+											clientSecret: '1a07a7eb9c9884dc5d148106ede830b2',
+											callbackURL: "http://local-widget.com/urac/login/success?mode=facebook"
+										},
+										"google": {
+											clientID: '393278808961-7qahk8kadr2jhbo05o84pbp5tc774a1l.apps.googleusercontent.com',
+											clientSecret: 'sdSpS8FLeUvc0UBs_z8m4f89',
+											callbackURL: "http://local-widget.com/urac/login/success"
+										},
+										"github": {
+											clientID: '79729863675e2513ae44',
+											clientSecret: '3f37cea1cff3e2ead1a11d96f9961e27293739e4',
+											callbackURL: "http://local-widget.com/urac/login/success?mode=github"
+										}
 									},
-									"forgotPassword": {
-										"subject": 'Reset Your Password at SOAJS',
-										"path": "./mail/urac/forgotPassword.tmpl"
+									"ldapServer": {
+										host: 'ldap://127.0.0.1',
+										port: 10389,
+										baseDN: 'ou=users,ou=system',
+										adminUser: 'uid=admin, ou=system',
+										adminPassword: 'secret'
 									},
-									"addUser": {
-										"subject": 'Account Created at SOAJS',
-										"path": "./mail/urac/addUser.tmpl"
+									"hashIterations": 1024, //used by hasher
+									"seedLength": 32, //used by hasher
+									// "optionalAlgorithm": 'md5',
+									"link": {
+										"addUser": "http://dashboard.soajs.org/#/setNewPassword",
+										"changeEmail": "http://dashboard.soajs.org/#/changeEmail/validate",
+										"forgotPassword": "http://dashboard.soajs.org/#/resetPassword",
+										"join": "http://dashboard.soajs.org/#/join/validate"
 									},
-									"changeUserStatus": {
-										"subject": "Account Status changed at SOAJS",
-										//use custom HTML
-										"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ts}}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
-									},
-									"changeEmail": {
-										"subject": "Change Account Email at SOAJS",
-										"path": "./mail/urac/changeEmail.tmpl"
+									"tokenExpiryTTL": 2 * 24 * 3600 * 1000,// token expiry limit in seconds
+									"validateJoin": true, //true if registration needs validation
+									"mail": { //urac mail options
+										"join": {
+											"subject": 'Welcome to SOAJS',
+											"path": "./mail/urac/join.tmpl"
+										},
+										"forgotPassword": {
+											"subject": 'Reset Your Password at SOAJS',
+											"path": "./mail/urac/forgotPassword.tmpl"
+										},
+										"addUser": {
+											"subject": 'Account Created at SOAJS',
+											"path": "./mail/urac/addUser.tmpl"
+										},
+										"changeUserStatus": {
+											"subject": "Account Status changed at SOAJS",
+											//use custom HTML
+											"content": "<p>Dear <b>{{ username }}</b>, <br />Your account status has changed to <b>{{ status }}</b> by the administrator on {{ts}}.<br /><br /> Regards,<br/> SOAJS Team. </p>"
+										},
+										"changeEmail": {
+											"subject": "Change Account Email at SOAJS",
+											"path": "./mail/urac/changeEmail.tmpl"
+										}
 									}
 								}
 							}
@@ -129,11 +131,13 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"urac": {
-								//"validateJoin": true,
-								"hashIterations": 1024, //used by hasher
-								"seedLength": 32, //used by hasher							
-								"tokenExpiryTTL": 2 * 24 * 3600 * 1000
+							"commonFields":{
+								"urac": {
+									//"validateJoin": true,
+									"hashIterations": 1024, //used by hasher
+									"seedLength": 32, //used by hasher
+									"tokenExpiryTTL": 2 * 24 * 3600 * 1000
+								}
 							}
 						}
 					}
@@ -159,17 +163,19 @@ var test = {
 					],
 					"config": {
 						"dev": {
-							"urac": {
-								//"validateJoin": true,
-								"hashIterations": 1024, //used by hasher
-								"seedLength": 32, //used by hasher							
-								"tokenExpiryTTL": 2 * 24 * 3600 * 1000,
-								"optionalAlgorithm": 'md5',
-								"passportLogin": {
-									"facebook": {
-										clientID: '123',
-										clientSecret: '1234',
-										"callbackURL": "http://local-widget.agmkpl.com/urac/login/success?mode=facebook"
+							"commonFields":{
+								"urac": {
+									//"validateJoin": true,
+									"hashIterations": 1024, //used by hasher
+									"seedLength": 32, //used by hasher
+									"tokenExpiryTTL": 2 * 24 * 3600 * 1000,
+									"optionalAlgorithm": 'md5',
+									"passportLogin": {
+										"facebook": {
+											clientID: '123',
+											clientSecret: '1234',
+											"callbackURL": "http://local-widget.agmkpl.com/urac/login/success?mode=facebook"
+										}
 									}
 								}
 							}
