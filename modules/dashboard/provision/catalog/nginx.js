@@ -12,6 +12,11 @@ var nginx = {
                 "name": "soajs",
                 "tag": "latest",
             }
-        }
+        },
+	    'buildOptions':{
+		    "settings": {},
+		    "env": {},
+		    "cmd": {}
+	    }
     }
 };
