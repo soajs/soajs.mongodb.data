@@ -92,11 +92,12 @@ var test = {
                 "oauth": {},
 				"example03": {
 					"apisPermission": "restricted",
-					"apisRegExp":{
-						"/*":{
-							"access": false
+					"apisRegExp":[
+						{
+							"access": false,
+							"regExp": /\/*/
 						}
-					},
+					],
 					"access": true
 				},
 				"example06": {
