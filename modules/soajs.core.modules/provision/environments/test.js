@@ -7,68 +7,27 @@ var test = {
 		"127.0.0.1"
 	],
 	"dbs": {
-		"clusters": {
-			"cluster1": {
-				"servers": [
-					{
-						"host": "127.0.0.1",
-						"port": 27017
-					}
-				],
-				"credentials": null,
-				"URLParam": {
-					"connectTimeoutMS": 0,
-					"socketTimeoutMS": 0,
-					"maxPoolSize": 5,
-					"wtimeoutMS": 0,
-					"slaveOk": true
-				},
-				"extraParam": {
-					"db": {
-						"native_parser": true
-					},
-					"server": {
-						"auto_reconnect": true
-					}
-				}
-			},
-			"es1": {
-				"servers": [
-					{
-						"host": "127.0.0.1",
-						"port": 9200
-					}
-				],
-				"credentials": null,
-				"URLParam": {
-					"protocol": "http"
-				},
-				"extraParam": {
-					"requestTimeout": 30000,
-					"keepAlive": true,
-					"maxSockets": 300,
-					"number_of_shards": 2,
-					"number_of_replicas": 1
-				}
-			}
-		},
 		"config": {
-			"prefix": "",
-			"session": {
-				"cluster": "cluster1",
-				"name": "core_session",
-				'store': {},
-				"collection": "sessions",
-				'stringify': false,
-				'expireAfter': 1000 * 60 * 60 * 24 * 14 // 2 weeks
-			}
+			"prefix": "SOAJS_"
 		},
 		"databases": {
 			"urac": {
-				"cluster": "cluster1",
+				"prefix": "MIKE_", // specific for this db (overriden)
+				"cluster": "dev_cluster",
 				"tenantSpecific": true
 			},
+			"session": {
+				"prefix": "SOAJS_", // same as default, set by insert/update api bl
+				"tenantSpecific": false,
+				"cluster": "dev_cluster",
+				"name": "dev_core_session",
+				"store": {},
+				"collection": "sessions",
+				"stringify": false,
+				"expireAfter": 1209600000
+			},
 			"es": {
+				"prefix": "", // specific for this db (overriden), no prefix
 				"cluster": "es1",
 				"tenantSpecific": false
 			}
