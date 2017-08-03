@@ -11,6 +11,7 @@ provDb.tenants.drop();
 
 var records = [];
 records.push(test);
+records.push(locked);
 provDb.tenants.insert(records);
 
 
