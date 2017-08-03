@@ -15,7 +15,20 @@ var nginx = {
         },
 	    'buildOptions':{
 		    "settings": {},
-		    "env": {},
+		    "env": {
+                "SOAJS_GIT_REPO": {
+                    "type": "static",
+                    "value": "testRepo"
+                },
+                "SOAJS_GIT_BRANCH": {
+                    "type": "static",
+                    "value": "master"
+                },
+                "SOAJS_GIT_COMMIT": {
+                    "type": "static",
+                    "value": "1234567890"
+                }
+            },
 		    "cmd": {}
 	    }
     }
