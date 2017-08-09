@@ -6,7 +6,6 @@ var locked = {
 		"redirectUri": "",
 		"grants": ["password", "refresh_token"]
 	},
-	"locked": true,
 	"code": "DBTN",
 	"name": "Dashboard Tenant",
 	"description": "This is the main dashboard tenant",

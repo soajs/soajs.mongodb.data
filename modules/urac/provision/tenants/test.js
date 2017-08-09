@@ -7,6 +7,7 @@ var test = {
 		"redirectUri": "",
 		"grants": ["password", "refresh_token"]
 	},
+	"locked": true,
 	"code": "test",
 	"name": "Test Tenant",
 	"description": "this is a description for test tenant",
