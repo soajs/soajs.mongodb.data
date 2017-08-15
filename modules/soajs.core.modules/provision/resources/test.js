@@ -11,17 +11,17 @@ var resources = [
 		driver: "mongo"        // mongo, oracle, sql ...
 	}, {
 		name: "dash_cluster",
-		created: "Dashboard",
+		created: "DASHBOARD",
 		author: "dahoura",
 		locked: true,
 		plugged: true,
 		data: {},
-		type: "cluser",
+		type: "db",
 		category: "SaaS",
 		driver: "oracle",
 		shared: true,              // if env=dashboard&true => resource shared in all env
 		sharedEnvs: {              // if avaiable and not empty => resource is only shared on these environments
-			"ENV": true,
+			"DEV": true,
 			"PROD": true
 		}
 	}, {
@@ -29,6 +29,7 @@ var resources = [
 		created: "DEV",
 		author: "miguel",
 		locked: false,
+        plugged: false,
 		data: {},
 		type: "custom",
 		shared: true,
@@ -40,6 +41,7 @@ var resources = [
 		name: "cdnCustomReg",
 		created: "DEV",
 		author: "zouzou",
+        plugged: true,
 		locked: false,
 		data: {
 			"path": {
