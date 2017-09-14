@@ -56,7 +56,7 @@ var dev = {
 		"config": {
 			"prefix": "",
 			"session": {
-				"cluster": "cluster1",
+				"cluster": "Dev_Cluster",
 				"name": "core_session",
 				'store': {},
 				"collection": "sessions",
