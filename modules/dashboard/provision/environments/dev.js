@@ -5,7 +5,7 @@ var dev = {
 	"locked": true,
 	"description": "this is the DEV environment",
 	"deployer": {
-		"type": "manual",
+		"type": "container",
 		"selected": "container.docker.local",
 		"container": {
 			"docker": {
