@@ -127,5 +127,19 @@ var dashboard = {
 				"saveUninitialized": false
 			}
 		}
+	},
+	"deployer": {
+		"type": "container",
+		"selected": "container.docker.local",
+		"container": {
+			"docker": {
+				"local": {
+					"socketPath": "/var/run/docker.sock"
+				},
+				"remote": {
+					"nodes": []
+				}
+			}
+		}
 	}
 };
