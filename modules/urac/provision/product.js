@@ -10,6 +10,7 @@ provDb.products.drop();
 
 var records = [];
 records.push(testProduct);
+records.push(testProductDbtn);
 provDb.products.insert(records);
 
 
