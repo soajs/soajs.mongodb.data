@@ -411,5 +411,33 @@ var core_hosts = [
 		"ip": "127.0.0.1",
 		"hostname": hostname().toLowerCase(),
 		"version": 2
+	},
+	{
+		"env": "qa",
+		"name": "controller",
+		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
+		"version": 1
+	},
+	{
+		"env": "qa",
+		"name": "dashboard",
+		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
+		"version": 1
+	},
+	{
+		"env": "qa",
+		"name": "oauth",
+		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
+		"version": 1
+	},
+	{
+		"env": "qa",
+		"name": "urac",
+		"ip": "127.0.0.1",
+		"hostname": hostname().toLowerCase(),
+		"version": 2
 	}
 ];

@@ -12,6 +12,7 @@ var records = [];
 records.push(dashboard);
 records.push(dev);
 records.push(stg);
+records.push(qa);
 
 provDb.environment.insert(records);
 
