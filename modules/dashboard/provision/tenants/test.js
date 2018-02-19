@@ -82,6 +82,11 @@ var test = {
 								"ownerPackage": "DSBRD_OWNER",
 								"defaultClientPackage": "DSBRD_CLIENT",
 								"clientspackage": {}
+							},
+							"commonFields":{
+								"HT_PROJECT":{
+									"name": "demo"
+								}
 							}
 						}
 					}
