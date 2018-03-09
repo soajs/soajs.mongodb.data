@@ -135,3 +135,41 @@ var dev = {
 		}
 	}
 };
+
+var resources = [{
+	"_id": ObjectId('59f1ab7f89e3e94321ad2d57'),
+	"name": "demo",
+	"type": "cluster",
+	"created": "DEV",
+	"author": "owner",
+	"config": {
+		"type": "mongo",
+		"servers": [
+			{
+				"host": "127.0.0.1",
+				"port": 27017
+			}
+		],
+		"credentials": null,
+		"URLParam": {
+			"connectTimeoutMS": 0,
+			"socketTimeoutMS": 0,
+			"maxPoolSize": 2,
+			"wtimeoutMS": 0,
+			"slaveOk": true
+		},
+		"extraParam": {
+			"db": {
+				"native_parser": true,
+				"bufferMaxEntries": 0
+			},
+			"server": {
+				"socketOptions": {
+					"autoReconnect": false
+				}
+			}
+		}
+	},
+	"plugged": true,
+	"category": "mongo"
+}];

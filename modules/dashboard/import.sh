@@ -16,4 +16,5 @@ mongo ./analytics.js
 mongo ./catalog.js
 mongo ./analytics.js
 mongo ./apiBuilder.js
+mongo ./saas.js
 popd
