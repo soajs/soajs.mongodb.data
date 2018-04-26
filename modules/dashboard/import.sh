@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pushd ./provision
+mongo ./templates.js
 mongo ./daemons.js
 mongo ./daemon_grpconf.js
 mongo ./environment.js
