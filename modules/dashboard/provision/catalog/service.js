@@ -3,7 +3,8 @@
 var service = {
     "_id": ObjectId('59034e43c69a1b962fc62213'),
     "name": "serviceCatalog",
-    "type": "soajs",
+    "type": "service",
+    "subtype": "soajs",
     "description": "This is a test catalog for deploying service instances",
     "recipe": {
         "deployOptions" : {

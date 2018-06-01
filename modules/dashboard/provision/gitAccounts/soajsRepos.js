@@ -38,6 +38,11 @@ var soajs_account = {
 			"name": "soajs/soajs.oauth",
 			"type": "service",
 			"configBranch": "develop"
+		},
+		{
+			"name": "soajs/soajs.epg",
+			"type": "service",
+			"configBranch": "master"
 		}
 	]
 };
