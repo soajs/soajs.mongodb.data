@@ -12,7 +12,11 @@ var nginx = {
                 "prefix": "soajsorg",
                 "name": "soajs",
                 "tag": "latest",
-            }
+            },
+	        "container" : {
+		        "network" : "soajsnet",
+		        "workingDir" : ""
+	        }
         },
 	    'buildOptions':{
 		    "settings": {},

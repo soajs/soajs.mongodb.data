@@ -13,6 +13,10 @@ var locked = {
                 "name": "soajs",
                 "tag": "latest",
             },
+	        "container" : {
+		        "network" : "soajsnet",
+		        "workingDir" : ""
+	        },
             "ports": {
                 "name": "servicePort",
                 "isPublished": "true",
