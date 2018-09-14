@@ -11,5 +11,6 @@ provDb.infra.drop();
 
 var infraRecords = [];
 infraRecords.push(infra1);
+infraRecords.push(infra2);
 
 provDb.infra.insert(infraRecords);
