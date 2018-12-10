@@ -1,4 +1,4 @@
-var ddb = db.getSiblingDB('test_urac');
+var ddb = db.getSiblingDB('test2_urac');
 
 /* users */
 var files = listFiles('./users');
