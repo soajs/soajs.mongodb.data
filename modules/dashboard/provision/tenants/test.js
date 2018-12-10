@@ -3,9 +3,15 @@
 var test = {
 	"_id": ObjectId("10d2cb5fc04ce51e06000001"),
 	"oauth": {
-		"secret": "shhh this is a secret",
-		"redirectURI": "",
-		"grants": ["password", "refresh_token"]
+		secret: "this is a secret",
+		redirectURI: "http://domain.com",
+		grants: [
+			"password",
+			"refresh_token"
+		],
+		disabled: 0,
+		type: 2.0,
+		loginMode: "urac"
 	},
 	"code": "test",
 	"name": "Test Tenant",

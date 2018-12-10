@@ -2,9 +2,15 @@
 var locked = {
 	"_id": ObjectId("551286bce603d7e01ab1688e"),
 	"oauth": {
-		"secret": "shhh this is a secret",
-		"redirectUri": "",
-		"grants": ["password", "refresh_token"]
+		secret: "this is a secret",
+		redirectURI: "http://domain.com",
+		grants: [
+			"password",
+			"refresh_token"
+		],
+		disabled: 0,
+		type: 2.0,
+		loginMode: "urac"
 	},
 	"locked": true,
 	"code": "DBTN",
