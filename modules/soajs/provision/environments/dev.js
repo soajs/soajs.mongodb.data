@@ -115,7 +115,8 @@ var dashboard = {
 				"grants": ['password', 'refresh_token'],
 				"accessTokenLifetime": 7200,
 				"refreshTokenLifetime": 1209600,
-				"debug": false
+				"debug": false,
+				"type" : 2
 			},
 			"ports": {"controller": 4000, "maintenanceInc": 1000, "randomInc": 100},
 			"cookie": {"secret": "this is a secret sentence"},

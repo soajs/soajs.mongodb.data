@@ -5,6 +5,8 @@ var test = {
 	"oauth": {
 		"secret": "shhh this is a secret",
 		"redirectUri": "",
+        "loginMode" : "urac",
+        "type" : 2,
 		"grants": ["password", "refresh_token"]
 	},
 	"code": "test",
