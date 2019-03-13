@@ -42,6 +42,7 @@ var core_services = [
     },
 	{
 		"name": "example03",
+        "requestTimeout": 5,
 		"port": 4012,
         "versions": {
             "1": {
