@@ -130,6 +130,14 @@ var test = {
 									"changeEmail": {
 										"subject": "Change Account Email at SOAJS",
 										"path": "./mail/urac/changeEmail.tmpl"
+									},
+									"changePin": {
+										"subject": "Change Pin Code for a user",
+										"path": "./mail/urac/subject.tmpl"
+									},
+									"invitePin": {
+										"subject": "Invite user to SOAJS",
+										"path": "./mail/urac/invitePin.tmpl"
 									}
 								}
 							}
