@@ -1,5 +1,4 @@
 var ddb = db.getSiblingDB('test_urac');
-
 var ddb2 = db.getSiblingDB('temp_urac');
 ddb2.dropDatabase();
 

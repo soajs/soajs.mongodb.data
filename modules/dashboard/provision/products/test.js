@@ -11,7 +11,8 @@ var testProduct = {
             "name" : "basic package",
             "description" : "this is a description for test product basic package",
             "acl" : {
-                "urac" : {}
+                "urac" : {},
+	            "httpmethods": {}
             },
             "_TTL" : 86400000 // 24 hours
         },
