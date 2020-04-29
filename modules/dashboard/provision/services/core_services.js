@@ -26,6 +26,7 @@ var core_services = [
 				"urac_ACL" : true,
 				"provision_ACL" : true,
 				"urac" : true,
+				"oauth" : true,
 				"apis": [
 					{
 						'l': "List Environments",

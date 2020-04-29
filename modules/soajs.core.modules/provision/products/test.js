@@ -11,7 +11,9 @@ var testProduct = {
 			"name": "basic package",
 			"description": "this is a description for test product basic package",
 			"acl": {
-				"urac": {}
+				"dashboard": {
+					"urac": {}
+				}
 			},
 			"_TTL": 86400000 // 24 hours
 		},
@@ -27,8 +29,10 @@ var testProduct = {
 			"name": "example03 package",
 			"description": "this is a description for test product example03 package",
 			"acl": {
-				"urac": {},
-				"example03": {"access": true}
+				"dashboard": {
+					"urac": {},
+					"example03": {"access": true}
+				}
 			},
 			"_TTL": 86400000 // 24 hours
 		}
