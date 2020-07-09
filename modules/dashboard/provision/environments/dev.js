@@ -107,8 +107,8 @@ var dev = {
 			},
 			"oauth": {
 				"grants": ['password', 'refresh_token'],
-				"accessTokenLifetime": 7200,
-				"refreshTokenLifetime": 1209600,
+				"accessTokenLifetime": 720000,
+				"refreshTokenLifetime": 12096000,
 				"debug": false
 			},
 			"ports": {
